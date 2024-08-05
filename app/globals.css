@@ -3,18 +3,19 @@
 @tailwind utilities;
 
 body{
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 :root{
     --primary:rgb(12, 29, 217);
-    --secondary:#ff0000;
+    --secondary:#C07F00;
+    --gray:#2f2f2f;
     
 }
 .link:hover{
-    border-bottom: 2px solid rgb(15, 255, 15);
+    border-bottom: 2px solid var(--secondary);
 }
 .heading{
-@apply text-4xl lg:text-6xl font-bold
+@apply text-4xl lg:text-6xl font-bold text-white
 }
 .para{
 @apply text-xl lg:text-2xl
