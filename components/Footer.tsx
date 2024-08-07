@@ -4,11 +4,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col bg-black  text-gray-100 pt-5 border-t border-[var(--gray)]">
+    <footer className="flex flex-col bg-[var(--primary)]  text-[var(--secondary)] pt-5 border-t border-[var(--gray)]">
       <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10 ">
         <div className="flex flex-col justify-start  items-start gap-6 ">
          <h1 className="text-xl font-bold">DevToDeploy</h1>
-          <p className="text-base text-gray-100">
+          <p className="text-base text-[var(--secondary)]">
             DevToDeploy 2024 <br /> All Rights Reserved &copy;
           </p>
         </div>
@@ -45,10 +45,10 @@ const Footer = () => {
       <div className="flex flex-between items-center flex-wrap mt-10 border-t border-[var(--gray)] sm:px-16 px-6 py-10  text-sm md:text-base">
         <p>@2024 DevToDeploy. All Rights Reserved</p>
         <div className="flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10">
-          <Link href={"/"} className="text-gray-100 ">
+          <Link href={"/"} className="text-[var(--secondary)]">
             Privacy Policy
           </Link>
-          <Link href={"/"} className="text-gray-100 ">
+          <Link href={"/"} className="text-[var(--secondary)] ">
             Terms of Use
           </Link>
         </div>

@@ -2,7 +2,7 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export function Cards() {
   return (
-    <div className="max-w-[85rem] justify-around  mx-auto px-7">
+    <div className="max-w-[85rem] text-blue-500 justify-around  mx-auto px-7">
       <HoverEffect items={projects} />
     </div>
   );

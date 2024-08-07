@@ -3,20 +3,21 @@
 @tailwind utilities;
 
 body{
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 :root{
-    --primary:rgb(12, 29, 217);
-    --secondary:#C07F00;
-    --gray:#2f2f2f;
+    --primary:#000;
+    --thirdcolor:#36363688;
+    --secondary:#ffffff;
+    --third:#C07F00;
     
 }
 .link:hover{
     border-bottom: 2px solid var(--secondary);
 }
 .heading{
-@apply text-4xl lg:text-6xl font-bold text-white
+@apply text-4xl lg:text-6xl font-bold text-[var(--secondary)]
 }
 .para{
-@apply text-xl lg:text-2xl
+@apply text-xl lg:text-2xl text-[var(--secondary)]
 }
