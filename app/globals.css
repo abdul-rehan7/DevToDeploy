@@ -2,22 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-:root{
-    --primary:#000;
-    --thirdcolor:#000000e0;
-    --secondary:#ffffff;
-    --third:#C07F00;
-    
+:root {
+  --primary: #000;
+  --thirdcolor: #000000e0;
+  --secondary: #ffffff;
+  --third: #c07f00;
 }
-.link:hover{
-    border-bottom: 2px solid var(--third);
+.link:hover {
+  border-bottom: 2px solid var(--third);
 }
-.heading{
-@apply text-4xl lg:text-6xl font-bold text-[var(--secondary)]
+.heading {
+  @apply text-4xl lg:text-6xl font-bold text-[var(--secondary)];
 }
-.para{
-@apply text-xl lg:text-2xl text-[var(--secondary)]
+.heading__2 {
+  @apply text-2xl lg:text-3xl font-bold text-[var(--secondary)];
+}
+@layer {
+  .para {
+    @apply text-xl lg:text-2xl text-[var(--secondary)];
+  }
+  .para__2 {
+    @apply text-base lg:text-lg text-[var(--secondary)];
+  }
 }
