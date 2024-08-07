@@ -13,7 +13,7 @@ body{
     
 }
 .link:hover{
-    border-bottom: 2px solid var(--secondary);
+    border-bottom: 2px solid var(--third);
 }
 .heading{
 @apply text-4xl lg:text-6xl font-bold text-[var(--secondary)]

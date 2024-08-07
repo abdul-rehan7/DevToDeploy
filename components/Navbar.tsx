@@ -1,24 +1,31 @@
-'use client'
-
+"use client";
+import { FaSun, FaMoon } from "react-icons/fa";
 import Link from "next/link";
 import React, { useState } from "react";
 const Navbar = () => {
   const [theme, setTheme] = useState({
-    primary: '#000',
-    secondary: '#ffffff',
-    thirdcolor: '#36363688',
+    primary: "#000",
+    secondary: "#ffffff",
+    thirdcolor: "#36363688",
+    sunVisible: false,
+    moonVisible: true,
   });
-
   const toggleTheme = () => {
     setTheme({
-      primary: theme.primary === '#000' ? '#ffffff' : '#000',
-      secondary: theme.secondary === '#ffffff' ? '#000' : '#ffffff',
-      thirdcolor: theme.thirdcolor === '#36363688' ? '#dedede' : '#36363688',
+      sunVisible: !theme.sunVisible,
+      moonVisible: !theme.moonVisible,
+      primary: theme.primary === "#000" ? "#ffffff" : "#000",
+      secondary: theme.secondary === "#ffffff" ? "#000" : "#ffffff",
+      thirdcolor: theme.thirdcolor === "#36363688" ? "#dedede" : "#36363688",
     });
-    document.documentElement.style.setProperty('--primary', theme.primary);
-    document.documentElement.style.setProperty('--secondary', theme.secondary);
-    document.documentElement.style.setProperty('--thirdcolor', theme.thirdcolor);
+    document.documentElement.style.setProperty("--primary", theme.primary);
+    document.documentElement.style.setProperty("--secondary", theme.secondary);
+    document.documentElement.style.setProperty(
+      "--thirdcolor",
+      theme.thirdcolor
+    );
   };
+
   return (
     <div className="bg-[var(--thirdcolor)] items-center z-50 fixed flex justify-between text-base lg:text-2xl w-full text-[var(--secondary)] py-3 lg:py-4 px-2 lg:px-12">
       <div className="logo font-bold">DevToDeploy</div>
@@ -40,10 +47,11 @@ const Navbar = () => {
             Connect
           </a>
         </button>
-        <button className="bg-transparent text-[var(--secondary)] border-[1px] border-[var(--secondary)] rounded-sm text-base lg:text-xl  py-1 px-2 lg:py-2 lg:px-4">
-          <a onClick={toggleTheme}>
-            Theme
-          </a>
+        <button
+          onClick={toggleTheme}
+          className="  bg-transparent text-[var(--secondary)] text-base lg:text-xl  py-1 px-2 lg:py-2 lg:px-4"
+        >
+          {theme.sunVisible ? <FaSun id="sun" /> : <FaMoon id="moon" />}
         </button>
       </div>
     </div>
