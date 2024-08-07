@@ -6,7 +6,7 @@ const Navbar = () => {
   const [theme, setTheme] = useState({
     primary: "#000",
     secondary: "#ffffff",
-    thirdcolor: "#36363688",
+    thirdcolor: "#000000e0",
     sunVisible: false,
     moonVisible: true,
   });
@@ -16,7 +16,7 @@ const Navbar = () => {
       moonVisible: !theme.moonVisible,
       primary: theme.primary === "#000" ? "#ffffff" : "#000",
       secondary: theme.secondary === "#ffffff" ? "#000" : "#ffffff",
-      thirdcolor: theme.thirdcolor === "#36363688" ? "#dedede" : "#36363688",
+      thirdcolor: theme.thirdcolor === "#000000e0" ? "#dedede" : "#000000e0",
     });
     document.documentElement.style.setProperty("--primary", theme.primary);
     document.documentElement.style.setProperty("--secondary", theme.secondary);
@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-[var(--thirdcolor)] items-center z-50 fixed flex justify-between text-base lg:text-2xl w-full text-[var(--secondary)] py-3 lg:py-4 px-2 lg:px-12">
+    <div className="bg-[var(--thirdcolor)]  items-center z-50  flex justify-between text-base lg:text-2xl w-full text-[var(--secondary)] py-3 lg:py-4 px-2 lg:px-12">
       <div className="logo font-bold">DevToDeploy</div>
       <div className="nav-links space-x-4 lg:space-x-7">
         <Link className="link" href="/">
