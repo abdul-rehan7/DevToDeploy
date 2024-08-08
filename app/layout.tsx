@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Providers } from "./providers";
+import Script from 'next/script'
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -30,8 +31,8 @@ export default function RootLayout({
           {children}
           <Footer />
         </Providers>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>AOS.init();</script>
+        <Script src="https://unpkg.com/aos@next/dist/aos.js"></Script>
+        <Script>AOS.init();</Script>
       </body>
     </html>
   );
