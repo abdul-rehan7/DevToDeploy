@@ -1,15 +1,26 @@
+"use client";
 import Hero from "@/components/Hero";
 import React from "react";
+import { useEffect } from "react";
 import { TbDeviceDesktopCode } from "react-icons/tb";
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>;
+import AOS from "aos";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // Duration of animations
+      once: true, // Whether animation should happen only once
+      delay: 50, // Whether animation should happen only once
+    });
+  });
   return (
     <div className="bg-[var(--primary)] flex flex-col items-center">
       <Hero title="We Believe In Code " description="" />
       {/* I am Service */}
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col  space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
-          <div className="first text-[11rem]">
+          <div className="first text-[11rem]" data-aos="fade-right">
             <TbDeviceDesktopCode className="lg:mr-16 text-[var(--secondary)]" />
           </div>
           <div className="second flex flex-col space-y-6">
@@ -65,7 +76,7 @@ const Services = () => {
               <li>• CMS & web dashboard development</li>
             </ul>
           </div>
-          <div className="first text-[11rem]">
+          <div className="first text-[11rem]" data-aos="fade-left">
             <TbDeviceDesktopCode className="lg:ml-16 text-[var(--secondary)]" />
           </div>
         </div>
@@ -73,7 +84,7 @@ const Services = () => {
       {/* I am Service */}
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
-          <div className="first text-[11rem]">
+          <div className="first text-[11rem]" data-aos="fade-right">
             <TbDeviceDesktopCode className="lg:mr-16 text-[var(--secondary)]" />
           </div>
           <div className="second flex flex-col space-y-6">
@@ -129,7 +140,7 @@ const Services = () => {
               <li>• CMS & web dashboard development</li>
             </ul>
           </div>
-          <div className="first text-[11rem]">
+          <div className="first text-[11rem]" data-aos="fade-left">
             <TbDeviceDesktopCode className="lg:ml-16 text-[var(--secondary)]" />
           </div>
         </div>
@@ -137,8 +148,11 @@ const Services = () => {
       {/* I am Service */}
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
-          <div className="first text-[11rem]">
-            <TbDeviceDesktopCode className="lg:mr-16 text-[var(--secondary)]" />
+          <div className="first text-[11rem]"  data-aos="fade-right">
+            <TbDeviceDesktopCode
+              className="lg:mr-16 text-[var(--secondary)]"
+             
+            />
           </div>
           <div className="second flex flex-col space-y-6">
             <div className="heading__2">SERVICES</div>

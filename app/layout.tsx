@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Providers } from './providers'
+import { Providers } from "./providers";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,18 +13,26 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang="en">
+      <head>
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <Providers>
-          <Navbar/>
-         
+          <Navbar />
+
           {children}
-          <Footer/>
-          </Providers>
+          <Footer />
+        </Providers>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>AOS.init();</script>
       </body>
     </html>
-  )
+  );
 }
