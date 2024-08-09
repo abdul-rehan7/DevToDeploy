@@ -22,9 +22,9 @@ body {
 }
 @layer {
   .para {
-    @apply text-xl lg:text-2xl text-[var(--secondary)];
+    @apply text-xl text-justify lg:text-2xl text-[var(--secondary)];
   }
   .para__2 {
-    @apply text-base lg:text-lg text-[var(--secondary)];
+    @apply text-base text-justify lg:text-lg text-[var(--secondary)];
   }
 }

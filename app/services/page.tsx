@@ -2,7 +2,8 @@
 import Hero from "@/components/Hero";
 import React from "react";
 import { useEffect } from "react";
-import { TbDeviceDesktopCode } from "react-icons/tb";
+import { TbDeviceDesktopCode,TbDeviceMobileCode,TbDeviceDesktopAnalytics,TbWorldSearch } from "react-icons/tb";
+import { FaUsersGear } from "react-icons/fa6";
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>;
 import AOS from "aos";
 
@@ -14,6 +15,7 @@ const Services = () => {
       delay: 50, // Whether animation should happen only once
     });
   });
+
   return (
     <div className="bg-[var(--primary)] flex flex-col items-center">
       <Hero title="We Believe In Code " description="" />
@@ -24,27 +26,31 @@ const Services = () => {
             <TbDeviceDesktopCode className="lg:mr-16 text-[var(--secondary)]" />
           </div>
           <div className="second flex flex-col space-y-6">
-            <div className="heading__2">SERVICES</div>
+            <div className="heading__2">Web Development</div>
             <div className="para__2">
-              In this digital age, if your business is not online, you don’t
-              exist. So if you want to create a new website for your business or
-              revamp an existing one, Olive Digital is at your service. Our web
-              solutions and designs are search engine friendly, aesthetically
-              appealing, interactive, and powerful enough to build a solid
-              presence of your business in the online world. We have the
-              expertise, skills and experience to design and deliver complex
-              systems, custom web platforms, and mobile applications. What makes
-              us different from others is our working methodology; we understand
-              your needs, focus on your requirements, and deliver beyond your
-              expectations. At present, we are offering following design and
-              development services
+              In an era where your digital footprint defines your
+              business&apos;s success, DevToDeploy is your partner in crafting
+              an extraordinary online presence. Our web development services are
+              designed to create not just websites but immersive digital
+              experiences that captivate your audience and drive engagement. We
+              blend creativity with cutting-edge technology to deliver solutions
+              that are both visually appealing and highly functional. From the
+              initial concept through to the final launch, our team focuses on
+              building responsive, user-friendly websites that align perfectly
+              with your business goals. Whether you need a sleek corporate site,
+              a dynamic e-commerce platform, or a custom web application, our
+              approach is tailored to deliver excellence and exceed your
+              expectations. With DevToDeploy, your website will stand out,
+              perform flawlessly, and enhance your brand&apos;s online impact.
             </div>
             <ul className="para__2 list-inside ">
-              <li>• Corporate ID</li>
-              <li>• Website design & development</li>
-              <li>• CMS & web dashboard development</li>
-              <li>• Responsive & mobile website development</li>
-              <li>• CMS & web dashboard development</li>
+              <li>• Responsive Design</li>
+              <li>• User Experience (UX)</li>
+              <li>• Performance Optimization</li>
+              <li>• SEO-Friendly</li>
+              <li>• E-Commerce Integration</li>
+              <li>• Maintenance & Support</li>
+              <li>• Customized Solutions</li>
             </ul>
           </div>
         </div>
@@ -53,31 +59,36 @@ const Services = () => {
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--primary)] w-screen md:h-[70vh] ">
           <div className="second flex flex-col space-y-6">
-            <div className="heading__2">SERVICES</div>
+            <div className="heading__2">Mobile Application Development</div>
             <div className="para__2">
-              In this digital age, if your business is not online, you don’t
-              exist. So if you want to create a new website for your business or
-              revamp an existing one, Olive Digital is at your service. Our web
-              solutions and designs are search engine friendly, aesthetically
-              appealing, interactive, and powerful enough to build a solid
-              presence of your business in the online world. We have the
-              expertise, skills and experience to design and deliver complex
-              systems, custom web platforms, and mobile applications. What makes
-              us different from others is our working methodology; we understand
-              your needs, focus on your requirements, and deliver beyond your
-              expectations. At present, we are offering following design and
-              development services
+              In a world dominated by mobile devices, a powerful app can set
+              your business apart and engage users like never before. At
+              DevToDeploy, we specialize in creating high-impact mobile
+              applications that offer seamless performance and exceptional user
+              experiences. Our development process integrates the latest
+              technologies with user-centric design to deliver apps that not
+              only meet but anticipate user needs. From native apps that
+              leverage platform-specific features to cross-platform solutions
+              that provide a consistent experience across devices, our team
+              ensures that your app performs optimally and stands out in a
+              crowded marketplace. We handle every stage of the app development
+              lifecycle—from concept and design to development, testing, and
+              launch—ensuring that your mobile application is both innovative
+              and effective. With our expertise, your app will captivate users,
+              drive engagement, and achieve your business objectives.
             </div>
             <ul className="para__2 list-inside ">
-              <li>• Corporate ID</li>
-              <li>• Website design & development</li>
-              <li>• CMS & web dashboard development</li>
-              <li>• Responsive & mobile website development</li>
-              <li>• CMS & web dashboard development</li>
+              <li> Native & Cross-Platform Development </li>
+              <li>• Performance Optimization </li>
+              <li>• Custom Features </li>
+              <li>• Integration Capabilities </li>
+              <li>• Security Measures </li>
+              <li>• App Analytics </li>
+              <li>• Customized Solutions </li>
             </ul>
           </div>
           <div className="first text-[11rem]" data-aos="fade-left">
-            <TbDeviceDesktopCode className="lg:ml-16 text-[var(--secondary)]" />
+            <TbDeviceMobileCode className="lg:ml-16 text-[var(--secondary)]" />
           </div>
         </div>
       </div>
@@ -85,30 +96,33 @@ const Services = () => {
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
           <div className="first text-[11rem]" data-aos="fade-right">
-            <TbDeviceDesktopCode className="lg:mr-16 text-[var(--secondary)]" />
+            <TbDeviceDesktopAnalytics className="lg:mr-16 text-[var(--secondary)]" />
           </div>
           <div className="second flex flex-col space-y-6">
-            <div className="heading__2">SERVICES</div>
+            <div className="heading__2">Business Analytics Services</div>
             <div className="para__2">
-              In this digital age, if your business is not online, you don’t
-              exist. So if you want to create a new website for your business or
-              revamp an existing one, Olive Digital is at your service. Our web
-              solutions and designs are search engine friendly, aesthetically
-              appealing, interactive, and powerful enough to build a solid
-              presence of your business in the online world. We have the
-              expertise, skills and experience to design and deliver complex
-              systems, custom web platforms, and mobile applications. What makes
-              us different from others is our working methodology; we understand
-              your needs, focus on your requirements, and deliver beyond your
-              expectations. At present, we are offering following design and
-              development services
+              Unlock the potential of your data with DevToDeploy&apos;s advanced
+              business analytics services. We transform complex datasets into
+              clear, actionable insights that empower you to make strategic
+              decisions and drive your business forward. Our team uses
+              sophisticated analytics tools and techniques to provide you with
+              comprehensive reports and visualizations that highlight key
+              trends, performance metrics, and growth opportunities. Whether you
+              need to optimize operational efficiency, enhance customer
+              experiences, or identify new market opportunities, our analytics
+              solutions are tailored to provide the clarity and foresight you
+              need. By turning raw data into valuable intelligence, we help you
+              navigate the complexities of your business environment and stay
+              ahead of the competition. With DevToDeploy, you’ll gain a deeper
+              understanding of your business dynamics and make data-driven
+              decisions that foster growth and success.
             </div>
             <ul className="para__2 list-inside ">
-              <li>• Corporate ID</li>
-              <li>• Website design & development</li>
-              <li>• CMS & web dashboard development</li>
-              <li>• Responsive & mobile website development</li>
-              <li>• CMS & web dashboard development</li>
+              <li>• Data Visualization</li>
+              <li>• Custom Reporting</li>
+              <li>• Trend Analysis</li>
+              <li>• Data Integration</li>
+              <li>• Customized Solutions</li>
             </ul>
           </div>
         </div>
@@ -117,65 +131,75 @@ const Services = () => {
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--primary)] w-screen md:h-[70vh] ">
           <div className="second flex flex-col space-y-6">
-            <div className="heading__2">SERVICES</div>
+            <div className="heading__2">Social Media Management</div>
             <div className="para__2">
-              In this digital age, if your business is not online, you don’t
-              exist. So if you want to create a new website for your business or
-              revamp an existing one, Olive Digital is at your service. Our web
-              solutions and designs are search engine friendly, aesthetically
-              appealing, interactive, and powerful enough to build a solid
-              presence of your business in the online world. We have the
-              expertise, skills and experience to design and deliver complex
-              systems, custom web platforms, and mobile applications. What makes
-              us different from others is our working methodology; we understand
-              your needs, focus on your requirements, and deliver beyond your
-              expectations. At present, we are offering following design and
-              development services
+              In today’s digital age, social media is a crucial element of your
+              brand’s success. DevToDeploy offers comprehensive social media
+              management services designed to amplify your online presence and
+              engage your audience effectively. Our team develops and implements
+              strategic social media plans that enhance your brand’s visibility,
+              foster meaningful connections with your target audience, and drive
+              engagement. We handle everything from content creation and
+              curation to community management and targeted advertising,
+              ensuring your social media channels are vibrant, interactive, and
+              aligned with your business objectives. With a focus on creativity
+              and analytics, we track performance, refine strategies, and
+              deliver results that matter. Partner with DevToDeploy to elevate
+              your social media presence and achieve impactful results in the
+              ever-evolving social landscape.
             </div>
             <ul className="para__2 list-inside ">
-              <li>• Corporate ID</li>
-              <li>• Website design & development</li>
-              <li>• CMS & web dashboard development</li>
-              <li>• Responsive & mobile website development</li>
-              <li>• CMS & web dashboard development</li>
+              <li>• Strategic Planning</li>
+              <li>• Content Creation</li>
+              <li>• Community Engagement</li>
+              <li>• Ad Campaign Management</li>
+              <li>• Performance Analytics</li>
+              <li>• Brand Consistency</li>
+              <li>• Trend Monitoring</li>
+              <li>• Customized Solutions</li>
             </ul>
           </div>
           <div className="first text-[11rem]" data-aos="fade-left">
-            <TbDeviceDesktopCode className="lg:ml-16 text-[var(--secondary)]" />
+            <FaUsersGear className="lg:ml-16 text-[var(--secondary)]" />
           </div>
         </div>
       </div>
       {/* I am Service */}
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
-          <div className="first text-[11rem]"  data-aos="fade-right">
-            <TbDeviceDesktopCode
-              className="lg:mr-16 text-[var(--secondary)]"
-             
-            />
+          <div className="first text-[11rem]" data-aos="fade-right">
+            <TbWorldSearch className="lg:mr-16 text-[var(--secondary)]" />
           </div>
           <div className="second flex flex-col space-y-6">
-            <div className="heading__2">SERVICES</div>
+            <div className="heading__2">
+              SEO &#40;Search Engine Optimization&#41;
+            </div>
             <div className="para__2">
-              In this digital age, if your business is not online, you don’t
-              exist. So if you want to create a new website for your business or
-              revamp an existing one, Olive Digital is at your service. Our web
-              solutions and designs are search engine friendly, aesthetically
-              appealing, interactive, and powerful enough to build a solid
-              presence of your business in the online world. We have the
-              expertise, skills and experience to design and deliver complex
-              systems, custom web platforms, and mobile applications. What makes
-              us different from others is our working methodology; we understand
-              your needs, focus on your requirements, and deliver beyond your
-              expectations. At present, we are offering following design and
-              development services
+              Achieve outstanding search engine visibility and attract quality
+              traffic with DevToDeploy’s expert SEO services. In a competitive
+              digital marketplace, being easily discoverable on search engines
+              is essential for driving success. Our SEO strategies are
+              meticulously crafted to enhance your website’s rankings, optimize
+              its performance, and ensure it stands out in search results. We
+              use a comprehensive approach that includes keyword research,
+              on-page optimization, technical SEO, and content strategy to boost
+              your online presence. Our team stays up-to-date with the latest
+              SEO trends and algorithm changes to keep your website ahead of the
+              curve. By focusing on both immediate results and long-term growth,
+              we help you connect with your audience, improve your search
+              visibility, and achieve sustained success. With DevToDeploy,
+              you’ll experience enhanced rankings, increased traffic, and a
+              stronger online presence.
             </div>
             <ul className="para__2 list-inside ">
-              <li>• Corporate ID</li>
-              <li>• Website design & development</li>
-              <li>• CMS & web dashboard development</li>
-              <li>• Responsive & mobile website development</li>
-              <li>• CMS & web dashboard development </li>
+              <li>• Keyword Research</li>
+              <li>• On-Page Optimization</li>
+              <li>• Technical SEO</li>
+              <li>• Content Strategy</li>
+              <li>• Link Building</li>
+              <li>• SEO Audits</li>
+              <li>• Local SEO</li>
+              <li>• Customized Solutions</li>
             </ul>
           </div>
         </div>
