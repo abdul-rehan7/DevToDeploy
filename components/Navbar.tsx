@@ -20,10 +20,7 @@ const Navbar = () => {
     });
     document.documentElement.style.setProperty("--primary", theme.primary);
     document.documentElement.style.setProperty("--secondary", theme.secondary);
-    document.documentElement.style.setProperty(
-      "--thirdcolor",
-      theme.thirdcolor
-    );
+    document.documentElement.style.setProperty("--thirdcolor",theme.thirdcolor);
   };
 
   return (

@@ -35,7 +35,6 @@ export default function RootLayout({
           id="my-script"
           src="https://unpkg.com/aos@next/dist/aos.js"
         ></Script>
-        AOS.init()
       </body>
     </html>
   );
