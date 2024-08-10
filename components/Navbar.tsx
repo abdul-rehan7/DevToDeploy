@@ -25,7 +25,9 @@ const Navbar = () => {
 
   return (
     <div className="bg-[var(--thirdcolor)]  items-center z-50  flex justify-between text-xs lg:text-2xl w-full text-[var(--secondary)] py-3 lg:py-4 px-2 lg:px-12">
-      <div className="logo font-bold">DevToDeploy</div>
+      <div className="logo ">
+        <img src="/logo-trans.png"  className="lg:w-[10rem] lg:h-[4rem] w-[6rem] h-[2.5rem]" alt="" />
+      </div>
       <div className="nav-links space-x-2 lg:space-x-7">
         <Link className="link" href="/">
           Home

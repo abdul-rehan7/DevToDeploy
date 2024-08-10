@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="flex flex-col bg-[var(--thirdcolor)]  text-[var(--secondary)] pt-5 border-t border-gray-400">
       <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10 ">
         <div className="flex flex-col justify-start  items-start gap-6 ">
-         <h1 className="text-xl font-bold">DevToDeploy</h1>
+        <img src="/logo-trans.png"  className="lg:w-[10rem] lg:h-[4rem] w-[6rem] h-[2.5rem]" alt="" />
           <p className="text-base text-[var(--secondary)]">
             DevToDeploy 2024 <br /> All Rights Reserved &copy;
           </p>
