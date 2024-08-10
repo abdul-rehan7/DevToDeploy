@@ -39,7 +39,7 @@ const Navbar = () => {
         <Link className="link" href="/contact">
           Contact
         </Link>
-        <button className="bg-transparent text-[var(--secondary)] border-[1px] border-[var(--secondary)] rounded-sm text-sm lg:text-xl  py-1 px-2 lg:py-2 lg:px-4">
+        <button className="bg-transparent text-[var(--secondary)] border-[1px] border-[var(--secondary)] rounded-sm text-xs lg:text-xl  py-1 px-2 lg:py-2 lg:px-4">
           <a href="https://www.linkedin.com/" target="_blank">
             Connect
           </a>
