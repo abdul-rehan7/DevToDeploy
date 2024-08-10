@@ -11,20 +11,28 @@ body {
   --secondary: #ffffff;
   --third: #c07f00;
 }
+.third{
+  background-blend-mode:overlay;
+}
 .link:hover {
   border-bottom: 2px solid var(--third);
 }
 .heading {
-  @apply text-4xl lg:text-6xl font-bold text-[var(--secondary)];
+  @apply text-2xl lg:text-4xl font-bold text-[var(--secondary)];
 }
 .heading__2 {
-  @apply text-2xl lg:text-3xl font-bold text-[var(--secondary)];
+  @apply text-2xl lg:text-2xl font-bold text-[var(--secondary)];
 }
 @layer {
+  .about__para {
+    @apply text-xs text-justify lg:text-sm text-black;
+  }
+
   .para {
     @apply text-xl text-justify lg:text-2xl text-[var(--secondary)];
   }
   .para__2 {
-    @apply text-base text-justify lg:text-lg text-[var(--secondary)];
+    @apply text-xs text-justify lg:text-sm text-[var(--secondary)];
   }
+
 }
