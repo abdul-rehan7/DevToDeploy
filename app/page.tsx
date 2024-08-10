@@ -7,8 +7,7 @@ export default function Home() {
     <main className="flex flex-col justify-normal items-center">
       <Hero
         classes="bg-center bg-cover bg-no-repeat"
-        title="Where Code Meets Creativity"
-        description="Discover the best solutions tailored to your needs. Our team is dedicated to providing top-notch services and exceptional support. "
+        title="Discover the best solutions tailored to your needs. Our team is dedicated to providing top-notch services and exceptional support."
       />
     </main>
   );

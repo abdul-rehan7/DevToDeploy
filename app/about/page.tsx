@@ -118,19 +118,19 @@ const About = () => {
         <div className="flex flex-col lg:flex-row px-10 space-y-2 w-screen lg:w-[100%] justify-around">
           <div className=" flex items-center space-x-3 counter item text-center">
             <TbDeviceDesktopCode className="text-7xl lg:text-8xl" />
-            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-2xl lg:text-xl">
+            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
             Web Development
             </p>
           </div>
           <div className=" flex items-center space-x-3 counter item text-center">
           <TbDeviceMobileCode className="text-7xl lg:text-8xl" />
-            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-2xl lg:text-xl">
+            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
             Mobile Application Development
             </p>
           </div>
           <div className=" flex items-center space-x-3 counter item text-center">
           <TbDeviceDesktopAnalytics className="text-7xl lg:text-8xl" />
-            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-2xl lg:text-xl">
+            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
             Business Analytics Services
             </p>
           </div>
@@ -138,13 +138,13 @@ const About = () => {
         <div className="flex  flex-col lg:flex-row px-10 space-y-2 w-screen lg:w-[80%] justify-around">
           <div className=" flex items-center space-x-3 counter item text-center">
           <FaUsersGear className="text-7xl lg:text-8xl" />
-            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-2xl lg:text-xl">
+            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
             Social Media Management
             </p>
           </div>
           <div className=" flex items-center space-x-3 counter item text-center">
           <TbWorldSearch className="text-7xl lg:text-8xl" />
-            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-2xl lg:text-xl">
+            <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
             SEO (Search Engine Optimization)
             </p>
           </div>

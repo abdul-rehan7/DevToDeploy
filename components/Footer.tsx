@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-between items-center flex-wrap mt-10 border-t border-gray-400 sm:px-16 px-6 py-10  text-sm md:text-base">
+      <div className="flex flex-between items-center flex-wrap mt-10 border-t border-gray-400 sm:px-16 px-6 py-10  text-xs md:text-base">
         <p>@2024 DevToDeploy. All Rights Reserved</p>
         <div className="flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10">
           <Link href={"/"} className="text-[var(--secondary)]">
