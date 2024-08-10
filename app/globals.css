@@ -18,10 +18,10 @@ body {
   border-bottom: 2px solid var(--third);
 }
 .heading {
-  @apply text-lg lg:text-4xl font-bold text-[var(--secondary)];
+  @apply text-lg lg:text-4xl font-bold;
 }
 .heading__2 {
-  @apply text-2xl lg:text-2xl font-bold text-[var(--secondary)];
+  @apply text-2xl lg:text-2xl font-bold  text-[var(--secondary)];
 }
 @layer {
   .about__para {

@@ -18,7 +18,7 @@ const Services = () => {
 
   return (
     <div className="bg-[var(--primary)] flex flex-col items-center">
-      <Hero title="We Believe In Code " description="" />
+      <Hero title="We Believe In Code " img="/services.png" />
       {/* I am Service */}
       <div className="flex flex-col">
         <div className="flex lg:flex-row flex-col  space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
