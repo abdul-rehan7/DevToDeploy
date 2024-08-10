@@ -18,7 +18,7 @@ const About = () => {
             innovation, driving impactful changes and shaping the digital
             landscape on a global scale. Our expertise in media communication
             and technology has enabled us to offer exceptional digital solutions
-            worldwide. We believe that standard solutions don't suffice; clients
+            worldwide. We believe that standard solutions don&apos;t suffice; clients
             seek distinctive approaches that differentiate them from the
             competition and deliver true value. At DevToDeploy, our mission is
             to surpass industry norms, ensuring not just customer satisfaction
@@ -30,13 +30,13 @@ const About = () => {
             What We Do
           </div>
           <div className="about__para">
-            At DevToDeploy, it’s not just about what we offer, but how we
-            deliver it that sets us apart. In today's digital age, the landscape
-            extends beyond mere information exchange; it’s about fostering deep
-            engagement and maintaining your brand's prominence. We provide
+            At DevToDeploy, it&apos;s not just about what we offer, but how we
+            deliver it that sets us apart. In today&apos;s digital age, the landscape
+            extends beyond mere information exchange; it&apos;s about fostering deep
+            engagement and maintaining your brand&apos;s prominence. We provide
             comprehensive solutions for a diverse range of digital needs, from
             web and mobile application development to business analytics, social
-            media management, and search engine optimization. Whether you’re
+            media management, and search engine optimization. Whether you&apos;re
             building your brand identity from scratch, enhancing your current
             website, launching an eCommerce platform, or crafting a digital
             marketing strategy, we deliver tailored solutions that turn your
