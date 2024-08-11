@@ -4,6 +4,7 @@ import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { TbSolarPanel } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
+import Link from "next/link";
 
 export function NavbarDemo() {
   return (
@@ -20,7 +21,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "absolute px-5 py-4 flex justify-between items-center bg-white inset-x-0 max-w-[100vw] z-50",
+        "absolute px-10 py-4 flex justify-between items-center lg:bg-transparent  bg-white inset-x-0 max-w-[100vw] ",
         className
       )}
     >
@@ -73,18 +74,18 @@ function Navbar({ className }: { className?: string }) {
               <span><img src="/logo-trans.png" alt="DevToDeploy" className="w-[10rem] h-[4rem]" /></span>
               <span onClick={() => setIsOpen(false)}><IoClose className="text-4xl"/></span>
             </div>
-            <a className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/">
+            <Link onClick={() => setIsOpen(false)} className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/">
               Home
-            </a>
-            <a className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/about">
+            </Link>
+            <Link onClick={() => setIsOpen(false)} className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/about">
               About
-            </a>
-            <a className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/services">
+            </Link>
+            <Link onClick={() => setIsOpen(false)} className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/services">
               Services
-            </a>
-            <a className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/contact">
+            </Link>
+            <Link onClick={() => setIsOpen(false)} className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/contact">
               Contact
-            </a>
+            </Link>
           </div>
         )}
       </div>
