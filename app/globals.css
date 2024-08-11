@@ -10,7 +10,7 @@ body {
   --primary: #000;
   --thirdcolor: #000000e0;
   --secondary: #ffffff;
-  --third: #c07f00;
+  --third: #009FBD;
 }
 .third{
   background-blend-mode:overlay;

@@ -21,39 +21,24 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "absolute px-10 py-4 flex justify-between items-center lg:bg-transparent  bg-white inset-x-0 max-w-[100vw] ",
+        "absolute lg:px-20 px-7 py-4 flex justify-between items-center lg:bg-transparent  bg-white inset-x-0 max-w-[100vw] ",
         className
       )}
     >
       <div className="logo">
         <img src="/logo-trans.png" className="w-[10rem] h-[4rem]" alt="" />
       </div>
-      <div className="hidden lg:block">
-        <Menu setActive={setActive}>
+      <div className="hidden space-x-10 text-lg lg:block">
+        
           <HoveredLink href="/">Home</HoveredLink>
-
-          <MenuItem
-            link="/services"
-            setActive={setActive}
-            active={active}
-            item="Services"
-          >
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="/web-dev">Web Development</HoveredLink>
-              <HoveredLink href="/interface-design">
-                Interface Design
-              </HoveredLink>
-              <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-              <HoveredLink href="/branding">Branding</HoveredLink>
-            </div>
-          </MenuItem>
+          <HoveredLink href="/services">Services</HoveredLink>
           <HoveredLink href="/about">About</HoveredLink>
           <HoveredLink href="/contact">Contact</HoveredLink>
-        </Menu>
+      
       </div>
       <div className="button hidden lg:block">
         <a
-          className="py-3 px-5 rounded-full border-2 border-black"
+          className="py-3 px-5 hover:text-white hover:bg-[var(--third)] transition-all hover:border-white rounded-full border-2 border-black"
           href="/www.linkedin.com"
         >
           Get Started +
@@ -71,19 +56,43 @@ function Navbar({ className }: { className?: string }) {
         {isOpen && (
           <div className="links flex flex-col text-2xl w-[100vw] h-[70vh]  top-0 right-0 bg-white absolute p-7 space-y-4">
             <div className="cursor-pointer font-bold flex items-center justify-between">
-              <span><img src="/logo-trans.png" alt="DevToDeploy" className="w-[10rem] h-[4rem]" /></span>
-              <span onClick={() => setIsOpen(false)}><IoClose className="text-4xl"/></span>
+              <span>
+                <img
+                  src="/logo-trans.png"
+                  alt="DevToDeploy"
+                  className="w-[10rem] h-[4rem]"
+                />
+              </span>
+              <span onClick={() => setIsOpen(false)}>
+                <IoClose className="text-4xl" />
+              </span>
             </div>
-            <Link onClick={() => setIsOpen(false)} className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/">
+            <Link
+              onClick={() => setIsOpen(false)}
+              className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300"
+              href="/"
+            >
               Home
             </Link>
-            <Link onClick={() => setIsOpen(false)} className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/about">
+            <Link
+              onClick={() => setIsOpen(false)}
+              className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300"
+              href="/about"
+            >
               About
             </Link>
-            <Link onClick={() => setIsOpen(false)} className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/services">
+            <Link
+              onClick={() => setIsOpen(false)}
+              className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300"
+              href="/services"
+            >
               Services
             </Link>
-            <Link onClick={() => setIsOpen(false)} className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300" href="/contact">
+            <Link
+              onClick={() => setIsOpen(false)}
+              className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300"
+              href="/contact"
+            >
               Contact
             </Link>
           </div>
