@@ -14,7 +14,7 @@ const Footer = () => {
             alt=""
           />
           <p className="text-base text-justify text-black lg:w-[25rem] w-[27rem]">
-            Markdev Solutions provides web&lsquo; mobile&lsquo; and AI solutions&lsquo; crafting
+            DevToDeploy provides web&#44; mobile&#44; and AI solutions&#44; crafting
             visually captivating designs and executing result-driven digital
             marketing strategies to amplify your brand&apos;s reach.
           </p>
