@@ -4,6 +4,7 @@
 
 body {
   overflow-x: hidden;
+  transition: 1s;
 }
 :root {
   --primary: #000;

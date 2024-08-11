@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 import Script from "next/script";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import { NavbarDemo } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>
-          <Navbar />
+          <NavbarDemo />
 
           {children}
           <Footer />
