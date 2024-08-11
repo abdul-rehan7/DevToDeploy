@@ -14,9 +14,9 @@ const Footer = () => {
             alt=""
           />
           <p className="text-base text-justify text-black lg:w-[25rem] w-[27rem]">
-            Markdev Solutions provides web, mobile, and AI solutions, crafting
+            Markdev Solutions provides web&lsquo; mobile&lsquo; and AI solutions&lsquo; crafting
             visually captivating designs and executing result-driven digital
-            marketing strategies to amplify your brand's reach.
+            marketing strategies to amplify your brand&apos;s reach.
           </p>
           <div className="socials flex space-x-4">
             <a
