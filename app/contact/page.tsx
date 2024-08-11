@@ -20,7 +20,7 @@ const Contact = () => {
       </section>
       {/* Form Section */}
 
-      <section className=" flex flex-col px-7 py-3">
+      <section className=" flex flex-col lg:px-24 px-7 py-3">
         <div className="flex flex-col lg:flex-row lg:space-x-2 lg:w-full w-[96%] ">
           <div className="flex w-full  flex-col m-2 space-y-2 ">
             <label htmlFor="Name">Name &#42;</label>

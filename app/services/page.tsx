@@ -1,7 +1,12 @@
 "use client";
 import React from "react";
 import { useEffect } from "react";
-import { TbDeviceDesktopCode,TbDeviceMobileCode,TbDeviceDesktopAnalytics,TbWorldSearch } from "react-icons/tb";
+import {
+  TbDeviceDesktopCode,
+  TbDeviceMobileCode,
+  TbDeviceDesktopAnalytics,
+  TbWorldSearch,
+} from "react-icons/tb";
 import { FaUsersGear } from "react-icons/fa6";
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>;
 import AOS from "aos";
@@ -16,13 +21,25 @@ const Services = () => {
   });
 
   return (
-    <div className="bg-[var(--primary)] flex flex-col items-center">
-      
+    <div className="bg-white flex flex-col items-center">
+      <section
+        style={{ backgroundImage: `url(${"/texture.jpg"})` }}
+        className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[70vh] h-auto w-screen`}
+      >
+        <div className="first h-full flex flex-col justify-center py-16    space-y-5 lg:w-[70vw]  w-[96vw]  lg:p-14 p-4">
+          <h1 className="lg:text-4xl text-2xl text-center  font-semibold">
+            Advanced IT Solutions:
+            <span className="text-blue-500"> Empowering Businesses</span> With
+            Transforming Tech.
+          </h1>
+        </div>
+      </section>
+
       {/* I am Service */}
       <div className="flex flex-col">
-        <div className="flex lg:flex-row flex-col  space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col  space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] text-white w-screen md:h-[70vh] ">
           <div className="first text-[11rem]" data-aos="fade-right">
-            <TbDeviceDesktopCode className="lg:mr-16 text-[var(--secondary)]" />
+            <TbDeviceDesktopCode className="lg:mr-16 text-white" />
           </div>
           <div className="second flex flex-col space-y-6">
             <div className="heading__2">Web Development</div>
@@ -56,10 +73,10 @@ const Services = () => {
       </div>
       {/* I am Service */}
       <div className="flex flex-col">
-        <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--primary)] w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
           <div className="second flex flex-col space-y-6">
-            <div className="heading__2">Mobile Application Development</div>
-            <div className="para__2">
+            <div className="heading__2 ">Mobile Application Development</div>
+            <div className="para__2 ">
               In a world dominated by mobile devices, a powerful app can set
               your business apart and engage users like never before. At
               DevToDeploy, we specialize in creating high-impact mobile
@@ -87,17 +104,17 @@ const Services = () => {
             </ul>
           </div>
           <div className="first text-[11rem]" data-aos="fade-left">
-            <TbDeviceMobileCode className="lg:ml-16 text-[var(--secondary)]" />
+            <TbDeviceMobileCode className="lg:ml-16 text-black" />
           </div>
         </div>
       </div>
       {/* I am Service */}
       <div className="flex flex-col">
-        <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col text-white space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbDeviceDesktopAnalytics className="lg:mr-16 text-[var(--secondary)]" />
           </div>
-          <div className="second flex flex-col space-y-6">
+          <div className="second flex  flex-col space-y-6">
             <div className="heading__2">Business Analytics Services</div>
             <div className="para__2">
               Unlock the potential of your data with DevToDeploy&apos;s advanced
@@ -128,7 +145,7 @@ const Services = () => {
       </div>
       {/* I am Service */}
       <div className="flex flex-col">
-        <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--primary)] w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
           <div className="second flex flex-col space-y-6">
             <div className="heading__2">Social Media Management</div>
             <div className="para__2">
@@ -159,13 +176,13 @@ const Services = () => {
             </ul>
           </div>
           <div className="first text-[11rem]" data-aos="fade-left">
-            <FaUsersGear className="lg:ml-16 text-[var(--secondary)]" />
+            <FaUsersGear className="lg:ml-16 text-black" />
           </div>
         </div>
       </div>
       {/* I am Service */}
       <div className="flex flex-col">
-        <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
+        <div className="flex text-white lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbWorldSearch className="lg:mr-16 text-[var(--secondary)]" />
           </div>

@@ -22,7 +22,7 @@ body {
   @apply text-lg lg:text-4xl font-bold;
 }
 .heading__2 {
-  @apply text-2xl lg:text-2xl font-bold  text-[var(--secondary)];
+  @apply text-2xl lg:text-2xl font-bold ;
 }
 @layer {
   .about__para {
@@ -33,7 +33,7 @@ body {
     @apply text-xl text-justify lg:text-2xl text-[var(--secondary)];
   }
   .para__2 {
-    @apply text-xs text-justify lg:text-sm text-[var(--secondary)];
+    @apply text-xs text-justify lg:text-sm ;
   }
 
 }

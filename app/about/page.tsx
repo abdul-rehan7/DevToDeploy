@@ -60,6 +60,18 @@ const Counter: React.FC<CounterProps> = ({ target }) => {
 const About = () => {
   return (
     <div>
+      <section
+        style={{ backgroundImage: `url(${"/texture.jpg"})` }}
+        className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[70vh] h-auto w-screen`}
+      >
+        <div className="first h-full flex flex-col justify-center py-16    space-y-5 lg:w-[70vw]  w-[96vw]  lg:p-14 p-4">
+          <h1 className="lg:text-4xl text-2xl text-center  font-semibold">
+          Grow Your Business with  
+            <span className="text-blue-500"> Strategic IT Solutions</span> With
+            DevToDeploy
+          </h1>
+        </div>
+      </section>
      
       <div className="w-full lg:space-x-7 justify-center items-center py-5  lg:space-y-0 space-y-7 flex flex-col lg:flex-row lg:justify-between lg:p-16 md:h-[25rem] bg-gray-100">
         <div className="first flex flex-col space-y-4 lg:w-[45vw] w-[80vw]">
