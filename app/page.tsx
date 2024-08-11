@@ -11,7 +11,7 @@ export default function Home() {
       >
         <div className="first h-full flex flex-col justify-center py-16    space-y-5 lg:w-[50vw]  w-[95vw]  lg:p-14 p-7">
           <h1 className="text-4xl font-semibold">
-            Advanced IT Solutions:{" "}
+            Advanced IT Solutions:
             <span className="text-blue-500">Empowering Businesses</span> With
             Transforming Tech.
           </h1>
@@ -26,8 +26,8 @@ export default function Home() {
             Learn More +
           </button>
         </div>
-        <div className="second lg:w-[50vw] w-[90vw] flex flex-col justify-center items-center  h-full ">
-          <img src="/hero-item.png" alt="" />
+        <div className="second lg:w-[50vw] w-[90vw] flex flex-col justify-center items-center">
+          <img className="h-[70vh]" src="/hero-item.png" alt="" />
         </div>
       </section>
       {/* ============== SERVICES SECTION  */}
