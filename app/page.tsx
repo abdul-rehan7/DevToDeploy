@@ -101,13 +101,9 @@ export default function Home() {
         <div className="second  flex items-center justify-center p-3 h-full lg:w-[50vw] w-[95vw]">
           <iframe
             width="560"
-            height="315"
+            height="320"
             src="https://www.youtube.com/embed/TjnwKDVjUYc?si=BZo-70xRfHnW6yoG"
-            title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
           ></iframe>
         </div>
       </section>
