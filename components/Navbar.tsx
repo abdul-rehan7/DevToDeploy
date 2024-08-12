@@ -35,11 +35,17 @@ function Navbar({ className }: { className?: string }) {
           link="/services"
           active={active}
           setActive={setActive}
-          item='Services'
+          item="Services"
         >
-          <HoveredLink href="/">Website Development</HoveredLink>
-          <HoveredLink href="/">Mobile App Development</HoveredLink>
-          <HoveredLink href="/">Business Analytics Services</HoveredLink>
+          <HoveredLink className="text-sm" href="/">
+            Website Development
+          </HoveredLink>
+          <HoveredLink className="text-sm" href="/">
+            Mobile App Development
+          </HoveredLink>
+          <HoveredLink className="text-sm" href="/">
+            Business Analytics Services
+          </HoveredLink>
         </MenuItem>
 
         <HoveredLink href="/about">About</HoveredLink>
@@ -63,7 +69,7 @@ function Navbar({ className }: { className?: string }) {
           <div className="line bg-black w-7 h-1 rounded-full"></div>
         </div>
         {isOpen && (
-          <div className="links flex flex-col text-2xl w-[100vw] h-[70vh]  top-0 right-0 bg-white absolute py-4 px-11 space-y-4">
+          <div className="links flex flex-col text-2xl w-[100vw] h-auto  top-0 right-0 bg-gray-100 absolute py-4 px-11 space-y-4">
             <div className="cursor-pointer  font-bold flex items-center justify-between">
               <span>
                 <img

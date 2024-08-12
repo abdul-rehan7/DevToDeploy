@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const transition = {
   type: "spring",
@@ -81,11 +82,11 @@ export const Menu = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ className,  children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="dark:text-black hover:text-[var(--third)] "
+     className={cn("dark:text-black hover:text-[var(--third)] ",className)}
     >
       {children}
     </Link>

@@ -20,15 +20,15 @@ const Footer = () => {
             className="lg:w-[10rem] lg:h-[4rem] w-[12rem] h-[5rem]"
             alt=""
           />
-          <p className="text-base text-justify text-black lg:w-[25rem] w-[27rem]">
+          <p className="lg:text-base text-sm  text-justify text-black lg:w-[25rem] w-[85vw]">
             DevToDeploy provides web&#44; mobile&#44; and AI solutions&#44;
             crafting visually captivating designs and executing result-driven
             digital marketing strategies to amplify your brand&apos;s reach.
           </p>
-          <div className="bg-gray-200 border-[1px] border-[var(--third)] pl-4 rounded-md flex items-center">
+          <div className="bg-gray-200 border-[1px] border-[var(--third)] lg:pl-4 pl-2 rounded-md flex items-center">
             <GoMail />
-            <input placeholder="Your Email" className=" bg-gray-200 border-none focus:outline-none px-4 py-2 h-full" type="text" />
-            <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md px-5 py-3 h-full">
+            <input placeholder="Your Email" className="lg:text-base text-xs bg-gray-200 border-none px-3 lg:w-[100%] w-[50%] focus:outline-none lg:px-4 lg:py-2 h-full" type="text" />
+            <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md lg:px-5 lg:py-3 py-2 px-7 h-full">
               Subscribe
             </button>
           </div>
