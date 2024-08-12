@@ -19,43 +19,45 @@ export const MenuItem = ({
   link,
   children,
 }: {
-  setActive: (item: string) => void;
+  setActive: (item: string | null) => void;
   active: string | null;
-  link:string;
+  link: string;
   item: string;
   children?: React.ReactNode;
 }) => {
   return (
-    <Link href={link} onMouseEnter={() => setActive(item)} className="relative ">
+    <Link
+      href={link}
+      onMouseEnter={() => setActive(item)}
+      onMouseLeave={() => setActive(null)} // Add this to reset active state
+      className="relative "
+    >
       <motion.p
         transition={{ duration: 0.3 }}
-      
-        className="cursor-pointer hover:text-green-500 text-black hover:opacity-[0.9] dark:text-black"
+        className="cursor-pointer hover:text-[var(--third)] text-black hover:opacity-[0.9] dark:text-black"
       >
         {item}
       </motion.p>
-      {active !== null && (
+      {active === item && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
-          {active === item && (
-            <div className="absolute top-[calc(100%_+_0.9rem)] left-1/2 transform -translate-x-1/2 pt-4">
+          <div className="absolute top-[calc(100%_+_0.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+            <motion.div
+              transition={transition}
+              layoutId="active" // layoutId ensures smooth animation
+              className="bg-[#151515] dark:bg-white backdrop-blur-sm overflow-hidden border dark:border-black/[0.1] shadow-xl"
+            >
               <motion.div
-                transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
-                className="bg-[#151515] dark:bg-white backdrop-blur-sm rounded-sm overflow-hidden border border-white/[0.2] dark:border-white/[0.2] shadow-xl"
+                layout // layout ensures smooth animation
+                className="flex flex-col space-y-2 w-max h-full p-4"
               >
-                <motion.div
-                  layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
-                >
-                  {children}
-                </motion.div>
+                {children}
               </motion.div>
-            </div>
-          )}
+            </motion.div>
+          </div>
         </motion.div>
       )}
     </Link>
@@ -71,7 +73,7 @@ export const Menu = ({
 }) => {
   return (
     <nav
-      onMouseLeave={() => setActive(null)} // resets the state
+      onMouseLeave={() => setActive(null)} // This resets the state for the entire nav
       className="relative rounded-lg shadow-input flex justify-center space-x-4 px-8 py-5 "
     >
       {children}
@@ -83,7 +85,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-      className="text-black dark:text-black hover:text-[var(--third)] "
+      className="dark:text-black hover:text-[var(--third)] "
     >
       {children}
     </Link>

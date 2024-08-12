@@ -1,4 +1,5 @@
 "use client";
+import { FaAngleDown } from "react-icons/fa6";
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
@@ -28,13 +29,21 @@ function Navbar({ className }: { className?: string }) {
       <div className="logo">
         <img src="/logo-trans.png" className="w-[10rem] h-[4rem]" alt="" />
       </div>
-      <div className="hidden space-x-10 text-lg lg:block">
-        
-          <HoveredLink href="/">Home</HoveredLink>
-          <HoveredLink href="/services">Services</HoveredLink>
-          <HoveredLink href="/about">About</HoveredLink>
-          <HoveredLink href="/contact">Contact</HoveredLink>
-      
+      <div className="hidden lg:flex space-x-10 text-lg ">
+        <HoveredLink href="/">Home</HoveredLink>
+        <MenuItem
+          link="/services"
+          active={active}
+          setActive={setActive}
+          item='Services'
+        >
+          <HoveredLink href="/">Website Development</HoveredLink>
+          <HoveredLink href="/">Mobile App Development</HoveredLink>
+          <HoveredLink href="/">Business Analytics Services</HoveredLink>
+        </MenuItem>
+
+        <HoveredLink href="/about">About</HoveredLink>
+        <HoveredLink href="/contact">Contact</HoveredLink>
       </div>
       <div className="button hidden lg:block">
         <a

@@ -1,7 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF ,FaTwitter,FaLinkedinIn, FaInstagram} from "react-icons/fa";
+import { GoMail } from "react-icons/go";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaPinterest,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,10 +21,17 @@ const Footer = () => {
             alt=""
           />
           <p className="text-base text-justify text-black lg:w-[25rem] w-[27rem]">
-            DevToDeploy provides web&#44; mobile&#44; and AI solutions&#44; crafting
-            visually captivating designs and executing result-driven digital
-            marketing strategies to amplify your brand&apos;s reach.
+            DevToDeploy provides web&#44; mobile&#44; and AI solutions&#44;
+            crafting visually captivating designs and executing result-driven
+            digital marketing strategies to amplify your brand&apos;s reach.
           </p>
+          <div className="bg-gray-200 border-[1px] border-[var(--third)] pl-4 rounded-md flex items-center">
+            <GoMail />
+            <input placeholder="Your Email" className=" bg-gray-200 border-none focus:outline-none px-4 py-2 h-full" type="text" />
+            <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md px-5 py-3 h-full">
+              Subscribe
+            </button>
+          </div>
           <div className="socials flex space-x-4">
             <a
               target="_blank"
@@ -42,6 +56,12 @@ const Footer = () => {
               className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaInstagram />
+            </a>
+            <a
+              target="_blank"
+              className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+            >
+              <FaPinterest />
             </a>
           </div>
         </div>
@@ -78,11 +98,19 @@ const Footer = () => {
                 <Link href={""}>Facebook</Link>
               </div>
               <div className="flex flex-col ">
-                <div className="text-gray-400 font-semibold">PHONE</div>
-                <span className="text-[var(--third)] font-semibold"> + 92 333 7777777 </span>
-                <span className="text-[var(--third)] font-semibold"> + 92 333 7777777 </span>
-                <div className="text-gray-400 font-semibold">Email</div>
-                <span className="text-[var(--third)] font-semibold">example@gmail.com</span>
+                <div className="text-black font-semibold">PHONE</div>
+                <span className="text-[var(--third)] font-semibold">
+                  {" "}
+                  + 92 333 7777777{" "}
+                </span>
+                <span className="text-[var(--third)] font-semibold">
+                  {" "}
+                  + 92 333 7777777{" "}
+                </span>
+                <div className="text-black font-semibold">Email</div>
+                <span className="text-[var(--third)] font-semibold">
+                  example@gmail.com
+                </span>
               </div>
             </div>
           </div>

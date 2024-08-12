@@ -73,7 +73,7 @@ const Services = () => {
       </div>
       {/* I am Service */}
       <div className="flex flex-col">
-        <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col-reverse space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
           <div className="second flex flex-col space-y-6">
             <div className="heading__2 ">Mobile Application Development</div>
             <div className="para__2 ">
@@ -145,7 +145,7 @@ const Services = () => {
       </div>
       {/* I am Service */}
       <div className="flex flex-col">
-        <div className="flex lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col-reverse space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
           <div className="second flex flex-col space-y-6">
             <div className="heading__2">Social Media Management</div>
             <div className="para__2">
