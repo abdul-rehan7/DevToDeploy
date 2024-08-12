@@ -35,7 +35,7 @@ function Navbar({ className }: { className?: string }) {
           link="/services"
           active={active}
           setActive={setActive}
-          item="Services"
+          item='Services'
         >
           <HoveredLink className="text-sm" href="/">
             Website Development

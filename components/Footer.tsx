@@ -28,14 +28,14 @@ const Footer = () => {
           <div className="bg-gray-200 border-[1px] border-[var(--third)] lg:pl-4 pl-2 rounded-md flex items-center">
             <GoMail />
             <input placeholder="Your Email" className="lg:text-base text-xs bg-gray-200 border-none px-3 lg:w-[100%] w-[50%] focus:outline-none lg:px-4 lg:py-2 h-full" type="text" />
-            <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md lg:px-5 lg:py-3 py-2 px-7 h-full">
+            <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md lg:px-5 lg:py-3 py-2 px-10 h-full">
               Subscribe
             </button>
           </div>
           <div className="socials flex space-x-4">
             <a
               target="_blank"
-              className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+              className="icon p-3 hover:bg-[#1f44ff] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaFacebookF />
             </a>
@@ -47,19 +47,19 @@ const Footer = () => {
             </a>
             <a
               target="_blank"
-              className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+              className="icon p-3 hover:bg-[#1f44ff] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaLinkedinIn />
             </a>
             <a
               target="_blank"
-              className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+              className="icon p-3 hover:bg-[#4c68d7] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaInstagram />
             </a>
             <a
               target="_blank"
-              className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+              className="icon p-3 hover:bg-[#ed2828] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaPinterest />
             </a>
