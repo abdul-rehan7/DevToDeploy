@@ -7,7 +7,6 @@ import { ImagesCarousel } from "@/components/HeroCarousel";
 export default function Home() {
   return (
     <main className="flex flex-col justify-normal items-center">
-  
       {/* ============== HERO SECTION  */}
       <section
         style={{ backgroundImage: `url(${"/texture.jpg"})` }}
@@ -27,7 +26,10 @@ export default function Home() {
             objectives while we manage the tech complexities and drive your
             digital success.
           </p>
-          <Link href='/contact'  className="border-2 w-[10rem] hover:text-white hover:bg-[var(--third)] transition-all hover:border-white  border-blue-600 py-3 px-7 rounded-full">
+          <Link
+            href="/contact"
+            className="border-2 w-[10rem] hover:text-white hover:bg-[var(--third)] transition-all hover:border-white  border-blue-600 py-3 px-7 rounded-full"
+          >
             Learn More +
           </Link>
         </div>
@@ -125,6 +127,35 @@ export default function Home() {
         <h1 className="text-4xl font-semibold text-center ">Our Services</h1>
         <CarouselDemo />
       </section>
+
+      {/* ===================CONSULTATION */}
+      <div className=" w-screen flex px-16 py-8 flex-col justify-center items-center lg:flex-row">
+        <div className=" lg:w-[60vw] w-[90vw]">
+          <img src="/consultation.jpg" alt="" />
+        </div>
+        <div className="bg-white border-[1px] border-gray-200 -translate-x-[30%] rounded-md p-4 flex flex-col space-y-3 lg:w-[50vw] w-[90vw]">
+          <h1 className="text-4xl font-semibold w-[60%]">
+            Schedule a Free Consultation
+          </h1>
+          <p>
+            We&apos;re happy to answer any questions you may have and help you
+            determine which of our services best fit your needs.
+          </p>
+          <form action="" className="flex flex-col space-y-4 ">
+            <div className="flex justify-between w-full">
+              <input placeholder="Name" type="text" className=" border-[1px] border-gray-200 p-2 rounded-md text-lg" />
+              <input placeholder="Email" type="text" className=" border-[1px] border-gray-200 p-2 rounded-md text-lg" />
+            </div>
+            <div className="flex flex-col space-y-5 justify-between w-full">
+              <input type="text" placeholder="Subject" className=" border-[1px] border-gray-200 p-2 rounded-md text-lg w-full" />
+
+              <textarea placeholder="Message" className="rounded-md p-2" rows={5} name="" id=""></textarea>
+            </div>
+            <button type="submit" className="w-full font-semibold active:bg-[#161616] bg-black rounded-md text-white p-4">Submit</button>
+           
+          </form>
+        </div>
+      </div>
     </main>
   );
 }
