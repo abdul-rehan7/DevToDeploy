@@ -58,6 +58,7 @@ export const ImagesSlider = ({
       })
       .catch((error) => console.error("Failed to load images", error));
   };
+
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowRight") {
@@ -121,13 +122,6 @@ export const ImagesSlider = ({
         className
       )}
     >
-      {areImagesLoaded && children}
-      {areImagesLoaded && overlay && (
-        <div
-          className={cn("absolute inset-0 bg-black/40 z-40", overlayClassName)}
-        />
-      )}
-
       {areImagesLoaded && (
         <AnimatePresence>
           <motion.img
@@ -140,6 +134,18 @@ export const ImagesSlider = ({
             className="image h-full w-full absolute inset-0 object-cover object-center"
           />
         </AnimatePresence>
+      )}
+
+      {areImagesLoaded && overlay && (
+        <div
+          className={cn("absolute inset-0 bg-black/70 z-30", overlayClassName)}
+        />
+      )}
+
+      {areImagesLoaded && (
+        <div className="absolute inset-0 z-40 flex items-center justify-center">
+          {children}
+        </div>
       )}
     </div>
   );
