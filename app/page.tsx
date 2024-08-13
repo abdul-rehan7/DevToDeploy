@@ -130,24 +130,24 @@ export default function Home() {
 
       {/* ===================CONSULTATION */}
       <div className=" w-screen flex px-16 py-8 flex-col justify-center items-center lg:flex-row">
-        <div className=" lg:w-[60vw] w-[90vw]">
+        <div className=" lg:w-[60vw] w-[90vw] hidden lg:block">
           <img src="/consultation.jpg" alt="" />
         </div>
-        <div className="bg-white border-[1px] border-gray-200 -translate-x-[30%] rounded-md p-4 flex flex-col space-y-3 lg:w-[50vw] w-[90vw]">
-          <h1 className="text-4xl font-semibold w-[60%]">
+        <div className="bg-white border-[1px] border-gray-200 lg:-translate-x-[30%] rounded-md p-6 flex flex-col space-y-3 lg:w-[50vw] w-[90vw]">
+          <h1 className="lg:text-4xl text-2xl font-semibold lg:w-[60%] w-[80%]">
             Schedule a Free Consultation
           </h1>
-          <p>
+          <p classname="lg:text-base  text-sm">
             We&apos;re happy to answer any questions you may have and help you
             determine which of our services best fit your needs.
           </p>
           <form action="" className="flex flex-col space-y-4 ">
-            <div className="flex justify-between w-full">
-              <input placeholder="Name" type="text" className=" border-[1px] border-gray-200 p-2 rounded-md text-lg" />
-              <input placeholder="Email" type="text" className=" border-[1px] border-gray-200 p-2 rounded-md text-lg" />
+            <div className="flex flex-col lg:flex-row lg:space-y-0 space-y-4 justify-between w-full">
+              <input placeholder="Name" type="text" className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm" />
+              <input placeholder="Email" type="text" className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm" />
             </div>
             <div className="flex flex-col space-y-5 justify-between w-full">
-              <input type="text" placeholder="Subject" className=" border-[1px] border-gray-200 p-2 rounded-md text-lg w-full" />
+              <input type="text" placeholder="Subject" className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm w-full" />
 
               <textarea placeholder="Message" className="rounded-md p-2" rows={5} name="" id=""></textarea>
             </div>
