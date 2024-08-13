@@ -31,11 +31,11 @@ export const MenuItem = ({
       href={link}
       onMouseEnter={() => setActive(item)}
       onMouseLeave={() => setActive(null)} // Add this to reset active state
-      className="relative"
+      className="relative "
     >
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer hover:text-[var(--third)] text-black hover:opacity-[0.9] dark:text-black"
+        className="cursor-pointer  hover:text-[var(--third)] text-black hover:opacity-[0.9] dark:text-black"
       >
         {item}
       </motion.p>
@@ -45,7 +45,7 @@ export const MenuItem = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
-          <div className="absolute top-[calc(100%_+_0.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+          <div className="absolute  z-50 top-[calc(100%_+_0.1rem)] left-1/2 transform -translate-x-1/2 pt-4">
             <motion.div
               transition={transition}
               layoutId="active" // layoutId ensures smooth animation
@@ -53,7 +53,7 @@ export const MenuItem = ({
             >
               <motion.div
                 layout // layout ensures smooth animation
-                className="flex flex-col space-y-2 w-max h-full p-4"
+                className="flex z-50 flex-col space-y-2 w-max h-full p-4"
               >
                 {children}
               </motion.div>
@@ -86,7 +86,7 @@ export const HoveredLink = ({ className,  children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-     className={cn("dark:text-black hover:text-[var(--third)] ",className)}
+     className={cn("dark:text-black  hover:text-[var(--third)] ",className)}
     >
       {children}
     </Link>
