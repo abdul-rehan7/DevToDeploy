@@ -12,8 +12,8 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col bg-gray-100  text-black pt-5 ">
-      <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10 ">
+    <footer className="flex flex-col bg-gray-100  text-black lg:pt-2 pt-5 ">
+      <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10 lg:py-4 ">
         <div className="flex flex-col justify-start  items-start gap-6 ">
           <img
             src="/logo-trans.png"

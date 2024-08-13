@@ -1,4 +1,5 @@
 "use client";
+import { CarouselDemo } from "@/components/Carousel";
 import * as React from "react";
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
         </div>
       </section>
       {/* ============== SERVICES SECTION  */}
+
       <section className=" px-4 py-8 w-screen flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-[2%] justify-center">
         <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
@@ -73,6 +75,7 @@ export default function Home() {
           </h1>
         </div>
       </section>
+
       {/* third section */}
       <section className=" lg:h-[80vh] h-auto flex flex-col lg:flex-row items-center justify-center w-screen p-12">
         <div className="first p-3 h-full  lg:w-[50vw] w-[90vw]">
@@ -113,40 +116,7 @@ export default function Home() {
       {/* Fourth Section */}
       <section className="flex flex-col space-y-7 items-center w-screen p-12">
         <h1 className="text-4xl font-semibold text-center ">Our Services</h1>
-        <div className="flex flex-col lg:space-x-4 space-y-4 lg:w-auto w-[70vw] lg:space-y-0 lg:flex-row justify-between">
-          <div className="card lg:h-[20rem] border border-gray-300 h-[24rem] space-y-4 text-center p-4 flex flex-col justify-center items-center rounded-md">
-            <img className="lg:w-[5rem] w-[8rem] " src="/our-personnel.png" alt="" />
-            <h1 className="font-bold text-2xl">Web Development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              quam quae est dolorem nulla illo.
-            </p>
-          </div>
-          <div className="card lg:h-[20rem] border border-gray-300 h-[24rem] space-y-4 text-center p-4 flex flex-col justify-center items-center rounded-md">
-            <img className="lg:w-[5rem] w-[8rem] " src="/our-personnel.png" alt="" />
-            <h1 className="font-bold text-2xl">Web Development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              quam quae est dolorem nulla illo.
-            </p>
-          </div>
-          <div className="card lg:h-[20rem] border border-gray-300 h-[24rem] space-y-4 text-center p-4 flex flex-col justify-center items-center rounded-md">
-            <img className="lg:w-[5rem] w-[8rem] " src="/our-personnel.png" alt="" />
-            <h1 className="font-bold text-2xl">Web Development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              quam quae est dolorem nulla illo.
-            </p>
-          </div>
-          <div className="card lg:h-[20rem] border border-gray-300 h-[24rem] space-y-4 text-center p-4 flex flex-col justify-center items-center rounded-md">
-            <img className="lg:w-[5rem] w-[8rem] " src="/our-personnel.png" alt="" />
-            <h1 className="font-bold text-2xl">Web Development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-              quam quae est dolorem nulla illo.
-            </p>
-          </div>
-        </div>
+        <CarouselDemo />
       </section>
     </main>
   );

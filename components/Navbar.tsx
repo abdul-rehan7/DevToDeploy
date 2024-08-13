@@ -52,12 +52,12 @@ function Navbar({ className }: { className?: string }) {
         <HoveredLink href="/contact">Contact</HoveredLink>
       </div>
       <div className="button hidden lg:block">
-        <a
+        <Link
           className="py-3 px-5 hover:text-white hover:bg-[var(--third)] transition-all hover:border-white rounded-full border-2 border-black"
-          href="/www.linkedin.com"
+          href="/contact"
         >
           Get Started +
-        </a>
+        </Link>
       </div>
       <div className="lg:hidden">
         <div
