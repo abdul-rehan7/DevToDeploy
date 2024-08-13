@@ -4,10 +4,10 @@ const Contact = () => {
   return (
     <div className="flex flex-col">
       <section
-        style={{ backgroundImage: `url(${"/texture.jpg"})` }}
-        className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[50vh] h-auto w-screen`}
+        style={{ backgroundImage: `url(${"/contact1.jpg"})`, backgroundBlendMode:"overlay" }}
+        className={`flex bg-center bg-[#000000a2] bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[60vh] h-auto w-screen`}
       >
-        <div className="first h-full flex flex-col text-center justify-center py-16    space-y-5 lg:w-[90vw]  w-[95vw]  lg:p-14 p-7">
+        <div className="first text-white h-full flex flex-col text-center justify-center py-16    space-y-5 lg:w-[90vw]  w-[95vw]  lg:p-14 p-7">
           <h1 className="text-5xl font-bold">
             Tell us What&apos;s on
             <span className="text-blue-500"> your Mind</span>

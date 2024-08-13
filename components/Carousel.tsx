@@ -11,29 +11,30 @@ import {
 const CardData = [
   {
     img: "/our-personnel.png", // Add your image URLs here
-    title: "Here I am",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempora tenetur repudiandae quasi illum, quis voluptas eligendi enim ad debitis",
+    title: "Web Development",
+    desc: "In an era where your digital footprint defines your business&apos;s success, DevToDeploy is your partner in crafting an extraordinary online presence. Our web development services are designed to create not just websites but immersive digital experiences that captivate your audience and drive engagement.",
   },
   {
-    img: "/our-personnel.png",
-    title: "Here I How",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempora tenetur repudiandae quasi illum, quis voluptas eligendi enim ad debitis",
+    img: "/our-personnel.png", // Add your image URLs here
+    title: "Web Development",
+    desc: "In an era where your digital footprint defines your business&apos;s success, DevToDeploy is your partner in crafting an extraordinary online presence. Our web development services are designed to create not just websites but immersive digital experiences that captivate your audience and drive engagement.",
   },
   {
-    img: "/our-personnel.png",
-    title: "Here I How",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempora tenetur repudiandae quasi illum, quis voluptas eligendi enim ad debitis",
+    img: "/our-personnel.png", // Add your image URLs here
+    title: "Web Development",
+    desc: "In an era where your digital footprint defines your business&apos;s success, DevToDeploy is your partner in crafting an extraordinary online presence. Our web development services are designed to create not just websites but immersive digital experiences that captivate your audience and drive engagement.",
   },
   {
-    img: "/our-personnel.png",
-    title: "Here I How",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempora tenetur repudiandae quasi illum, quis voluptas eligendi enim ad debitis",
+    img: "/our-personnel.png", // Add your image URLs here
+    title: "Web Development",
+    desc: "In an era where your digital footprint defines your business&apos;s success, DevToDeploy is your partner in crafting an extraordinary online presence. Our web development services are designed to create not just websites but immersive digital experiences that captivate your audience and drive engagement.",
   },
   {
-    img: "/our-personnel.png",
-    title: "Here I How",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempora tenetur repudiandae quasi illum, quis voluptas eligendi enim ad debitis",
+    img: "/our-personnel.png", // Add your image URLs here
+    title: "Web Development",
+    desc: "In an era where your digital footprint defines your business&apos;s success, DevToDeploy is your partner in crafting an extraordinary online presence. Our web development services are designed to create not just websites but immersive digital experiences that captivate your audience and drive engagement.",
   },
+ 
 ];
 
 export function CarouselDemo() {
@@ -50,8 +51,10 @@ export function CarouselDemo() {
                     alt={card.title}
                     className="w-[6rem] h-[6rem] object-cover"
                   />
-                  <span className="text-3xl font-semibold">{card.title}</span>
-                  <span className="text-base text-center font-normal">{card.desc}</span>
+                  <span className="text-3xl text-center font-semibold">{card.title}</span>
+                  <span className="text-xs text-justify font-normal">
+                    {card.desc}
+                  </span>
                 </CardTitle>
               </Card>
             </div>

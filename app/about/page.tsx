@@ -2,8 +2,14 @@
 
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-import { TbDeviceDesktopCode,TbDeviceMobileCode,TbDeviceDesktopAnalytics,TbWorldSearch } from "react-icons/tb";
+import {
+  TbDeviceDesktopCode,
+  TbDeviceMobileCode,
+  TbDeviceDesktopAnalytics,
+  TbWorldSearch,
+} from "react-icons/tb";
 import { FaUsersGear } from "react-icons/fa6";
+import { AccordionDemo } from "@/components/Accordian";
 interface CounterProps {
   target: number;
 }
@@ -61,18 +67,18 @@ const About = () => {
   return (
     <div>
       <section
-        style={{ backgroundImage: `url(${"/texture.jpg"})` }}
-        className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[70vh] h-auto w-screen`}
+        style={{ backgroundImage: `url(${"/about.jpg"})`, backgroundBlendMode:"overlay"}}
+        className={`flex bg-center bg-[#000000b5] bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[80vh] h-auto w-screen`}
       >
         <div className="first h-full flex flex-col justify-center py-16    space-y-5 lg:w-[70vw]  w-[96vw]  lg:p-14 p-4">
-          <h1 className="lg:text-4xl text-2xl text-center  font-semibold">
-          Grow Your Business with  
+          <h1 className="lg:text-4xl text-2xl text-center text-white font-semibold">
+            Grow Your Business with
             <span className="text-blue-500"> Strategic IT Solutions</span> With
             DevToDeploy
           </h1>
         </div>
       </section>
-     
+
       <div className="w-full lg:space-x-7 justify-center items-center py-5  lg:space-y-0 space-y-7 flex flex-col lg:flex-row lg:justify-between lg:p-16 md:h-[25rem] bg-gray-100">
         <div className="first flex flex-col space-y-4 lg:w-[45vw] w-[80vw]">
           <div className="text-xl lg:text-2xl font-bold text-[var(--third)]">
@@ -131,33 +137,33 @@ const About = () => {
           <div className=" flex items-center space-x-3 counter item text-center">
             <TbDeviceDesktopCode className="text-7xl lg:text-8xl" />
             <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
-            Web Development
+              Web Development
             </p>
           </div>
           <div className=" flex items-center space-x-3 counter item text-center">
-          <TbDeviceMobileCode className="text-7xl lg:text-8xl" />
+            <TbDeviceMobileCode className="text-7xl lg:text-8xl" />
             <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
-            Mobile Application Development
+              Mobile Application Development
             </p>
           </div>
           <div className=" flex items-center space-x-3 counter item text-center">
-          <TbDeviceDesktopAnalytics className="text-7xl lg:text-8xl" />
+            <TbDeviceDesktopAnalytics className="text-7xl lg:text-8xl" />
             <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
-            Business Analytics Services
+              Business Analytics Services
             </p>
           </div>
         </div>
         <div className="flex  flex-col lg:flex-row px-10 space-y-2 w-screen lg:w-[80%] justify-around">
           <div className=" flex items-center space-x-3 counter item text-center">
-          <FaUsersGear className="text-7xl lg:text-8xl" />
+            <FaUsersGear className="text-7xl lg:text-8xl" />
             <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
-            Social Media Management
+              Social Media Management
             </p>
           </div>
           <div className=" flex items-center space-x-3 counter item text-center">
-          <TbWorldSearch className="text-7xl lg:text-8xl" />
+            <TbWorldSearch className="text-7xl lg:text-8xl" />
             <p className="font-normal text-[var(--third)] hover:text-black transition-all cursor-pointer text-xl lg:text-xl">
-            SEO (Search Engine Optimization)
+              SEO (Search Engine Optimization)
             </p>
           </div>
         </div>
@@ -191,6 +197,19 @@ const About = () => {
               Digital Inhabitants
             </p>
           </div>
+        </div>
+      </div>
+      {/* =============> Accordion Section */}
+      <div className="AccordionSection w-full py-[10%] flex  flex-col lg:flex-row lg:space-x-16 justify-center items-center p-4">
+        <div className="lg:w-[50vw] flex flex-col space-y-3">
+          <h1 className="text-3xl lg:text-4xl font-semibold">Any Queries? We are here to assist</h1>
+          <p>Contact Tech Matter to schedule an IT consultation. We'll evaluate your infrastructure, discuss your needs, and suggest personalized solutions.</p>
+          <div className=" h-[30vh]">
+          <AccordionDemo />
+          </div>
+        </div>
+        <div className="">
+          <img className="w-[30vw] hidden lg:block " src="/accordion-item.png" alt="" />
         </div>
       </div>
     </div>

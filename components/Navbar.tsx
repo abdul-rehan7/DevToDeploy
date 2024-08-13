@@ -22,7 +22,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "absolute lg:px-20 px-7 py-4 flex justify-between items-center lg:bg-transparent  bg-white inset-x-0 max-w-[100vw] ",
+        "absolute lg:px-20 px-7 py-4 flex justify-between items-center   bg-white inset-x-0 max-w-[100vw] ",
         className
       )}
     >
