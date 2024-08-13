@@ -1,12 +1,19 @@
 "use client";
 import { CarouselDemo } from "@/components/Carousel";
 import * as React from "react";
+import Link from "next/link";
+import { ImagesCarousel } from "@/components/HeroCarousel";
 
 export default function Home() {
   return (
     <main className="flex flex-col justify-normal items-center">
-      {/* ============== HERO SECTION  */}
       <section
+        className={` pt-24 p-0 h-auto w-screen`}
+      >
+        <ImagesCarousel />
+      </section>
+      {/* ============== HERO SECTION  */}
+      {/* <section
         style={{ backgroundImage: `url(${"/texture.jpg"})` }}
         className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[100vh] h-auto w-screen`}
       >
@@ -17,20 +24,21 @@ export default function Home() {
             Transforming Tech.
           </h1>
           <p>
-            Tech Matter empowers businesses through customized, fully managed
-            cloud and dependable, high-performing IT solutions. Our managed IT
-            solutions and other services allow companies to concentrate on
-            accomplishing their objectives rather than being weighed down by
-            data backup and management tasks.
+            DevToDeploy elevates your business with customized, fully managed
+            software development solutions. From web and mobile application
+            development to business analytics, social media management, and SEO,
+            our comprehensive services ensure you can focus on your core
+            objectives while we manage the tech complexities and drive your
+            digital success.
           </p>
-          <button className="border-2 w-[10rem] hover:text-white hover:bg-[var(--third)] transition-all hover:border-white  border-blue-600 py-3 px-7 rounded-full">
+          <Link href='/contact'  className="border-2 w-[10rem] hover:text-white hover:bg-[var(--third)] transition-all hover:border-white  border-blue-600 py-3 px-7 rounded-full">
             Learn More +
-          </button>
+          </Link>
         </div>
         <div className="second lg:w-[50vw] w-[90vw] flex flex-col justify-center items-center">
           <img className="h-[70vh]" src="/hero-item.png" alt="" />
         </div>
-      </section>
+      </section> */}
       {/* ============== SERVICES SECTION  */}
 
       <section className=" px-4 py-8 w-screen flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-[2%] justify-center">
@@ -84,25 +92,28 @@ export default function Home() {
             <span className=" text-blue-500">satisfy Your Audience</span>
           </h1>
           <p className="mt-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
-            architecto minima nisi laborum ab, facilis sint odit, impedit nobis
-            dicta recusandae eos nulla quaerat iusto nesciunt? Lorem ipsum dolor
-            sit, amet consectetur adipisicing elit. Minus, quae! Odit
-            consectetur cum suscipit?
+            Creating an outstanding product goes beyond coding—it demands a
+            blend of expertise from web developers, app developers, analysts,
+            and digital strategists. At DevToDeploy, we excel in delivering
+            exceptional Web Development, Mobile Application Development,
+            Business Analytics Services, Social Media Management, and SEO
+            solutions.
           </p>
-          <p className="mt-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero
-            officiis quod nisi quos fuga minima iusto ex adipisci sunt, porro,
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit id
-            explicabo officiis ea pariatur ullam recusandae hic odit obcaecati
-            excepturi. harum reprehenderit mollitia aperiam natus voluptas
-            perferendis dolor dolore ut impedit enim repudiandae ullam! Eius
-            nostrum laudantium quae sapiente, earum maxime quasi atque quis enim
-            vitae vero vel amet ex.
+          <p className="my-5">
+            Our team is dedicated to building, launching, and growing your
+            digital presence with precision and creativity. We thrive on
+            collaboration and problem-solving, ensuring your audience receives
+            an engaging and impactful experience. With DevToDeploy, you get a
+            partner committed to elevating your brand and achieving your goals.
           </p>
-          <button className="mt-5 px-8 py-2 bg-white border-2 hover:text-white hover:bg-[var(--third)] transition-all hover:border-white border-blue-500 rounded-full">
-            Let&apos;s Chat
-          </button>
+          <div>
+            <Link
+              href="/about"
+              className="mt-5 px-8 py-2 bg-white border-2 hover:text-white hover:bg-[var(--third)] transition-all hover:border-white border-blue-500 rounded-full"
+            >
+              About +
+            </Link>
+          </div>
         </div>
         <div className="second  flex items-center justify-center p-3 h-full lg:w-[50vw] w-[95vw]">
           <iframe

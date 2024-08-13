@@ -31,7 +31,7 @@ export const MenuItem = ({
       href={link}
       onMouseEnter={() => setActive(item)}
       onMouseLeave={() => setActive(null)} // Add this to reset active state
-      className="relative "
+      className="relative"
     >
       <motion.p
         transition={{ duration: 0.3 }}
@@ -49,7 +49,7 @@ export const MenuItem = ({
             <motion.div
               transition={transition}
               layoutId="active" // layoutId ensures smooth animation
-              className="bg-[#151515] dark:bg-white backdrop-blur-sm overflow-hidden border dark:border-black/[0.1] shadow-xl"
+              className="bg-[#ffffff] z- dark:bg-white backdrop-blur-sm overflow-hidden border dark:border-black/[0.1] shadow-xl"
             >
               <motion.div
                 layout // layout ensures smooth animation
