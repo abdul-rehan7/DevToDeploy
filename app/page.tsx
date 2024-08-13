@@ -137,7 +137,7 @@ export default function Home() {
           <h1 className="lg:text-4xl text-2xl font-semibold lg:w-[60%] w-[80%]">
             Schedule a Free Consultation
           </h1>
-          <p classname="lg:text-base  text-sm">
+          <p className="lg:text-base  text-sm">
             We&apos;re happy to answer any questions you may have and help you
             determine which of our services best fit your needs.
           </p>
