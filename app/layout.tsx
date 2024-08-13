@@ -19,12 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta property="og:image" content="/DevToDeployfavicon.png" />
-        <link
-          rel="shortcut icon"
-          href="/DevToDeployfavicon.png"
-          type="image/x-icon"
-        />
+        <meta property="og:image" content="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+
         <link
           href="https://unpkg.com/aos@2.3.1/dist/aos.css"
           rel="stylesheet"
