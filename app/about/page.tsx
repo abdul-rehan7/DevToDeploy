@@ -199,19 +199,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* =============> Accordion Section */}
-      <div className="AccordionSection w-full py-[10%] flex  flex-col lg:flex-row lg:space-x-16 justify-center items-center p-4">
-        <div className="lg:w-[50vw] flex flex-col space-y-3">
-          <h1 className="text-3xl lg:text-4xl font-semibold">Any Queries? We are here to assist</h1>
-          <p>Contact Tech Matter to schedule an IT consultation. We'll evaluate your infrastructure, discuss your needs, and suggest personalized solutions.</p>
-          <div className=" h-[30vh]">
-          <AccordionDemo />
-          </div>
-        </div>
-        <div className="">
-          <img className="w-[30vw] hidden lg:block " src="/accordion-item.png" alt="" />
-        </div>
-      </div>
+      
     </div>
   );
 };
