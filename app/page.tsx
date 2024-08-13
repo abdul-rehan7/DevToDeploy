@@ -7,13 +7,9 @@ import { ImagesCarousel } from "@/components/HeroCarousel";
 export default function Home() {
   return (
     <main className="flex flex-col justify-normal items-center">
-      <section
-        className={` pt-24 p-0 h-auto w-screen`}
-      >
-        <ImagesCarousel />
-      </section>
+  
       {/* ============== HERO SECTION  */}
-      {/* <section
+      <section
         style={{ backgroundImage: `url(${"/texture.jpg"})` }}
         className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[100vh] h-auto w-screen`}
       >
@@ -38,7 +34,7 @@ export default function Home() {
         <div className="second lg:w-[50vw] w-[90vw] flex flex-col justify-center items-center">
           <img className="h-[70vh]" src="/hero-item.png" alt="" />
         </div>
-      </section> */}
+      </section>
       {/* ============== SERVICES SECTION  */}
 
       <section className=" px-4 py-8 w-screen flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-[2%] justify-center">

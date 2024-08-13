@@ -10,6 +10,7 @@ import {
 import { FaUsersGear } from "react-icons/fa6";
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>;
 import AOS from "aos";
+import { ImagesCarousel } from "@/components/HeroCarousel";
 
 const Services = () => {
   useEffect(() => {
@@ -22,17 +23,10 @@ const Services = () => {
 
   return (
     <div className="bg-white flex flex-col items-center">
-      <section
-        style={{ backgroundImage: `url(${"/texture.jpg"})` }}
-        className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[70vh] h-auto w-screen`}
+         <section
+        className={` pt-24 p-0 h-auto w-screen`}
       >
-        <div className="first h-full flex flex-col justify-center py-16    space-y-5 lg:w-[70vw]  w-[96vw]  lg:p-14 p-4">
-          <h1 className="lg:text-4xl text-2xl text-center  font-semibold">
-            Advanced IT Solutions:
-            <span className="text-blue-500"> Empowering Businesses</span> With
-            Transforming Tech.
-          </h1>
-        </div>
+        <ImagesCarousel />
       </section>
 
       {/* I am Service */}
