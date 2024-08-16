@@ -1,40 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
 
 body {
-    overflow-x: hidden;
-    transition: 1s;
+  overflow-x: hidden;
+  transition: 1s;
+}
+:root {
+  --primary: #000;
+  --thirdcolor: #000000e0;
+  --secondary: #ffffff;
+  --third: #009fbd;
+}
+.third {
+  background-blend-mode: overlay;
+}
+.link:hover {
+  border-bottom: 2px solid var(--third);
+}
+.heading {
+  @apply text-lg lg:text-4xl font-bold;
+}
+.heading__2 {
+  @apply text-2xl lg:text-2xl font-bold;
+}
+@layer {
+  .about__para {
+    @apply text-xs text-justify lg:text-sm text-black;
   }
-  :root {
-    --primary: #000;
-    --thirdcolor: #000000e0;
-    --secondary: #ffffff;
-    --third: #009FBD;
+
+  .para {
+    @apply text-xl text-justify lg:text-2xl text-[var(--secondary)];
   }
-  .third{
-    background-blend-mode:overlay;
+  .para__2 {
+    @apply text-xs text-justify lg:text-sm;
   }
-  .link:hover {
-    border-bottom: 2px solid var(--third);
-  }
-  .heading {
-    @apply text-lg lg:text-4xl font-bold;
-  }
-  .heading__2 {
-    @apply text-2xl lg:text-2xl font-bold ;
-  }
-  @layer {
-    .about__para {
-      @apply text-xs text-justify lg:text-sm text-black;
-    }
-  
-    .para {
-      @apply text-xl text-justify lg:text-2xl text-[var(--secondary)];
-    }
-    .para__2 {
-      @apply text-xs text-justify lg:text-sm ;
-    }
-  
-  }
+}
+.spin:hover {
+  transition-duration: 1s;
+  transform: rotateY(180deg);
+}
+

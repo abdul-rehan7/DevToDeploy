@@ -42,7 +42,8 @@ export default function Home() {
       <section className=" px-4 py-8 w-screen flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-[2%] justify-center">
         <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
-            className="lg:w-10 lg:h-10 w-[4rem] "
+
+            className=" spin lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
           />
@@ -52,7 +53,7 @@ export default function Home() {
         </div>
         <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
-            className="lg:w-10 lg:h-10 w-[4rem] "
+            className="spin  lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
           />
@@ -62,7 +63,7 @@ export default function Home() {
         </div>
         <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
-            className="lg:w-10 lg:h-10 w-[4rem] "
+            className="spin lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
           />
@@ -72,7 +73,7 @@ export default function Home() {
         </div>
         <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
-            className="lg:w-10 lg:h-10 w-[4rem] "
+            className="spin lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
           />
