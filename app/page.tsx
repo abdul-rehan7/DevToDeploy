@@ -10,9 +10,9 @@ export default function Home() {
       {/* ============== HERO SECTION  */}
       <section
         style={{ backgroundImage: `url(${"/texture.jpg"})` }}
-        className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[100vh] h-auto w-screen`}
+        className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center  p-10  lg:h-[100vh] h-auto w-screen`}
       >
-        <div className="first h-full flex flex-col justify-center py-16    space-y-5 lg:w-[50vw]  w-[95vw]  lg:p-14 p-7">
+        <div className="first h-full flex flex-col justify-center py-6    space-y-5 lg:w-[50vw]  w-[95vw]  lg:p-14 p-7">
           <h1 className="text-4xl font-semibold">
             Advanced IT Solutions:
             <span className="text-blue-500">Empowering Businesses</span> With

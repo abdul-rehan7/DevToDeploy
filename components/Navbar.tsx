@@ -1,118 +1,99 @@
 "use client";
-import { FaAngleDown } from "react-icons/fa6";
-import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
-import { cn } from "@/lib/utils";
-import { TbSolarPanel } from "react-icons/tb";
-import { IoClose } from "react-icons/io5";
+import { DivideSquareIcon } from "lucide-react";
 import Link from "next/link";
+import React, { useState } from "react";
+import { IoClose } from "react-icons/io5";
 
 export function NavbarDemo() {
-  return (
-    <div className="w-full flex items-center justify-center">
-      <Navbar className="top-0" />
-    </div>
-  );
-}
-
-function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   return (
-    <div
-      className={cn(
-        "absolute lg:px-20 px-7 py-4 flex justify-between items-center   bg-white inset-x-0 max-w-[100vw] ",
-        className
-      )}
-    >
-      <div className="logo">
-        <img src="/logo-trans.png" className="w-[10rem] h-[4rem]" alt="" />
-      </div>
-      <div className="hidden lg:flex space-x-10 text-lg ">
-        <HoveredLink href="/">Home</HoveredLink>
-        <MenuItem
-          link="/services"
-          active={active}
-          setActive={setActive}
-          item='Services'
-        >
-          <HoveredLink className="text-sm" href="/">
-            Website Development
-          </HoveredLink>
-          <HoveredLink className="text-sm" href="/">
-            Mobile App Development
-          </HoveredLink>
-          <HoveredLink className="text-sm" href="/">
-            Business Analytics Services
-          </HoveredLink>
-        </MenuItem>
-
-        <HoveredLink href="/about">About</HoveredLink>
-        <HoveredLink href="/contact">Contact</HoveredLink>
-      </div>
-      <div className="button hidden lg:block">
-        <Link
-          className="py-3 px-5 hover:text-white hover:bg-[var(--third)] transition-all hover:border-white rounded-full border-2 border-black"
-          href="/contact"
-        >
-          Get Started +
-        </Link>
-      </div>
-      <div className="lg:hidden">
-        <div
-          className="hamburger cursor-pointer space-y-1"
-          onClick={() => setIsOpen(true)}
-        >
-          <div className="line bg-black w-7 h-1 rounded-full"></div>
-          <div className="line bg-black w-7 h-1 rounded-full"></div>
-          <div className="line bg-black w-7 h-1 rounded-full"></div>
+    <>
+      <div className="bg-transparent lg:px-20 px-7 py-4 flex justify-between items-center w-full">
+        <div className="logo">
+          <img src="/logo-trans.png" className="w-[10rem] h-[4rem]" alt="" />
         </div>
-        {isOpen && (
-          <div className="links flex flex-col text-2xl w-[100vw] h-auto  top-0 right-0 bg-gray-100 absolute py-4 px-11 space-y-4">
-            <div className="cursor-pointer  font-bold flex items-center justify-between">
-              <span>
-                <img
-                  src="/logo-trans.png"
-                  alt="DevToDeploy"
-                  className="w-[10rem] h-[4rem]"
-                />
-              </span>
-              <span onClick={() => setIsOpen(false)}>
-                <IoClose className="text-4xl" />
-              </span>
-            </div>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300"
-              href="/"
-            >
-              Home
-            </Link>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300"
-              href="/about"
-            >
-              About
-            </Link>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300"
-              href="/services"
-            >
-              Services
-            </Link>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="text-black hover:text-[var(--third)] border-b-[1px] py-3 border-gray-300"
-              href="/contact"
-            >
-              Contact
-            </Link>
+        <button
+          className=" top-4 left-4 lg:hidden  text-white rounded"
+          onClick={() => setVisible(false)}
+        >
+          <div className="burger lg:hidden flex flex-col space-y-1">
+            <div className="line bg-black h-1 w-7 rounded-full"></div>
+            <div className="line bg-black h-1 w-7 rounded-full"></div>
+            <div className="line bg-black h-1 w-7 rounded-full"></div>
           </div>
-        )}
+        </button>
+        <div className="hidden lg:flex space-x-10 text-lg ">
+          <HoveredLink href="/">Home</HoveredLink>
+          <MenuItem
+            link="/services"
+            active={active}
+            setActive={setActive}
+            item="Services"
+          >
+            <HoveredLink className="text-sm" href="/">
+              Website Development
+            </HoveredLink>
+            <HoveredLink className="text-sm" href="/">
+              Mobile App Development
+            </HoveredLink>
+            <HoveredLink className="text-sm" href="/">
+              Business Analytics Services
+            </HoveredLink>
+          </MenuItem>
+
+          <HoveredLink href="/about">About</HoveredLink>
+          <HoveredLink href="/contact">Contact</HoveredLink>
+        </div>
+        <div className="button hidden lg:block">
+          <Link
+            className="py-3 px-5 hover:text-white hover:bg-[var(--third)] transition-all hover:border-white rounded-full border-2 border-black"
+            href="/contact"
+          >
+            Get Started +
+          </Link>
+        </div>
       </div>
-    </div>
+      <div
+        className={`fixed top-0 right-0 bg-[#7474748d] backdrop-blur-sm z-[100] p-2 px-4 text-white h-full flex  w-[50%] transition-transform duration-500 ${
+          visible ? "translate-x-full" : " translate-x-0"
+        }`}
+      >
+        <div className="flex flex-col space-y-6">
+          <IoClose className="text-3xl " onClick={() => setVisible(true)} />
+          <Link
+            className="link w-[10rem]"
+            href="/"
+            onClick={() => setVisible(true)}
+          >
+            Home
+          </Link>
+          <Link
+            className="link w-[10rem]"
+            href="/services"
+            onClick={() => setVisible(true)}
+          >
+            Services
+          </Link>
+          <Link
+            className="link w-[10rem]"
+            href="/about"
+            onClick={() => setVisible(true)}
+          >
+            About
+          </Link>
+          <Link
+            className="link w-[10rem]"
+            href="/contact"
+            onClick={() => setVisible(true)}
+          >
+            Contact
+          </Link>
+        </div>
+      </div>
+    </>
   );
 }

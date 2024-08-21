@@ -25,7 +25,7 @@ const Services = () => {
   return (
     <div className="bg-white flex flex-col items-center">
          <section
-        className={` pt-24 p-0 h-auto w-screen`}
+        className={` p-0 h-auto w-screen`}
       >
         <ImagesCarousel />
       </section>
