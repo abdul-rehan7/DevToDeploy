@@ -14,7 +14,7 @@ export default function Home() {
       >
         <div className="first h-full flex flex-col justify-center py-6    space-y-5 lg:w-[50vw]  w-[95vw]  lg:p-14 p-7">
           <h1 className="text-4xl font-semibold">
-            Advanced IT Solutions:
+            Advanced IT Solutions: <br />
             <span className="text-blue-500">Empowering Businesses</span> With
             Transforming Tech.
           </h1>

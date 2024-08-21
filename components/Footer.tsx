@@ -27,13 +27,18 @@ const Footer = () => {
           </p>
           <div className="bg-gray-200 border-[1px] border-[var(--third)] lg:pl-4 pl-2 rounded-md flex items-center">
             <GoMail />
-            <input placeholder="Your Email" className="lg:text-base text-xs bg-gray-200 border-none px-3 lg:w-[100%] w-[50%] focus:outline-none lg:px-4 lg:py-2 h-full" type="text" />
+            <input
+              placeholder="Your Email"
+              className="lg:text-base text-xs bg-gray-200 border-none px-3 lg:w-[100%] w-[50%] focus:outline-none lg:px-4 lg:py-2 h-full"
+              type="text"
+            />
             <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md lg:px-5 lg:py-3 py-2 px-10 h-full">
               Subscribe
             </button>
           </div>
           <div className="socials flex space-x-4">
             <a
+              href=" https://www.facebook.com/devtodeploy"
               target="_blank"
               className="icon p-3 hover:bg-[#1f44ff] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
@@ -46,18 +51,21 @@ const Footer = () => {
               <FaTwitter />
             </a>
             <a
+              href="https://pk.linkedin.com/in/devtodeploy-kamyab-pakistan-58ba921ba"
               target="_blank"
               className="icon p-3 hover:bg-[#1f44ff] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaLinkedinIn />
             </a>
             <a
+              href=" https://www.instagram.com/devtodeploy/"
               target="_blank"
               className="icon p-3 hover:bg-[#4c68d7] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaInstagram />
             </a>
             <a
+              href="https://www.pinterest.com/devtodeploy/"
               target="_blank"
               className="icon p-3 hover:bg-[#ed2828] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
@@ -92,20 +100,28 @@ const Footer = () => {
             <div className="flex flex-col space-y-3">
               <h1 className="font-bold text-[var(--third)]">Contact Us</h1>
               <div className="hidden lg:flex lg:flex-col space-y-3">
-                <Link href={""}>Discord</Link>
-                <Link href={""}>Instagram</Link>
-                <Link href={""}>Twitter</Link>
-                <Link href={""}>Facebook</Link>
+                <Link href={"https://www.pinterest.com/devtodeploy/"}>
+                  Pinterest
+                </Link>
+                <Link href={" https://www.instagram.com/devtodeploy/"}>
+                  Instagram
+                </Link>
+                <Link
+                  href={
+                    "https://pk.linkedin.com/in/devtodeploy-kamyab-pakistan-58ba921ba"
+                  }
+                >
+                  LinkedIn
+                </Link>
+                <Link href={" https://www.facebook.com/devtodeploy"}>
+                  Facebook
+                </Link>
               </div>
               <div className="flex flex-col ">
                 <div className="text-black font-semibold">PHONE</div>
                 <span className="text-[var(--third)] font-semibold">
                   {" "}
-                  + 92 333 7777777{" "}
-                </span>
-                <span className="text-[var(--third)] font-semibold">
-                  {" "}
-                  + 92 333 7777777{" "}
+                  +92 317 1291912
                 </span>
                 <div className="text-black font-semibold">Email</div>
                 <span className="text-[var(--third)] font-semibold">

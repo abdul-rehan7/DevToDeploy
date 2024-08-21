@@ -172,13 +172,13 @@ const About = () => {
       <div className="fourth flex flex-col lg:flex-row space-y-7 lg:space-y-0  py-10 lg:py-16 lg:px-10 lg:justify-around">
         <div className="flex w-screen lg:w-[50%] justify-around">
           <div className="counter item text-center">
-            <Counter target={15} />
+            <Counter target={24} />
             <p className="font-medium text-base lg:text-xl">
               Football Games Played
             </p>
           </div>
           <div className="counter item text-center">
-            <Counter target={15} />
+            <Counter target={39} />
             <p className="font-medium text-base lg:text-xl">
               Cups of Tea Consumed
             </p>
@@ -186,13 +186,13 @@ const About = () => {
         </div>
         <div className="flex w-screen lg:w-[50%] justify-around">
           <div className="counter item text-center">
-            <Counter target={15} />
+            <Counter target={17} />
             <p className="font-medium text-base lg:text-xl">
               Projects Finished
             </p>
           </div>
           <div className="counter item text-center">
-            <Counter target={15} />
+            <Counter target={37} />
             <p className="font-medium text-base lg:text-xl">
               Digital Inhabitants
             </p>

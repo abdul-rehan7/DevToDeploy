@@ -32,7 +32,7 @@ export function ImagesCarousel() {
         <motion.p className="font-bold flex text-white flex-col justify-center items-center text-2xl md:text-5xl text-center py-4">
           <p className="lg:w-[80vw] w-screen">
             &quot;Software is a{" "}
-            <span className="text-[var(--third)]">great combination</span>
+            <span className="text-[var(--third)]">great combination </span>
             between artistry and engineering.&quot; <br /> — Bill Gates
           </p>
         </motion.p>
