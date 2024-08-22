@@ -34,15 +34,39 @@ export function NavbarDemo() {
             setActive={setActive}
             item="Services"
           >
-            <HoveredLink className="text-sm" href="/">
-              Website Development
-            </HoveredLink>
-            <HoveredLink className="text-sm" href="/">
-              Mobile App Development
-            </HoveredLink>
-            <HoveredLink className="text-sm" href="/">
-              Business Analytics Services
-            </HoveredLink>
+            <div className="flex space-x-2">
+              <div className="flex flex-col">
+                <HoveredLink className="text-sm" href="/services#webdev">
+                  Website Development
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#mdev">
+                  Mobile App Development
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#bas">
+                  Business Analytics Services
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#seo">
+                  Search Engine Optimisation
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#smm">
+                  Social Media Management
+                </HoveredLink>
+              </div>
+              <div className="flex flex-col justify-center border-l px-3 border-black">
+                <HoveredLink className="text-sm" href="/">
+                  AI Service
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/">
+                  AI Service
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/">
+                  AI Service
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/">
+                  AI Service
+                </HoveredLink>
+              </div>
+            </div>
           </MenuItem>
 
           <HoveredLink href="/about">About</HoveredLink>

@@ -31,13 +31,13 @@ const Services = () => {
       </section>
 
       {/* I am Service */}
-      <div className="flex flex-col">
+      <div id="webdev" className="flex flex-col">
         <div className="flex lg:flex-row flex-col  space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] text-white w-screen md:h-[70vh] ">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbDeviceDesktopCode className="lg:mr-16 text-white" />
           </div>
           <div className="second flex flex-col space-y-6">
-            <div className="heading__2">Web Development</div>
+            <div id="" className="heading__2 ">Web Development</div>
             <div className="para__2">
               In an era where your digital footprint defines your
               business&apos;s success, DevToDeploy is your partner in crafting
@@ -67,7 +67,7 @@ const Services = () => {
         </div>
       </div>
       {/* I am Service */}
-      <div className="flex flex-col">
+      <div id="mdev"  className="flex flex-col">
         <div className="flex lg:flex-row flex-col-reverse space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
           <div className="second flex flex-col space-y-6">
             <div className="heading__2 ">Mobile Application Development</div>
@@ -104,7 +104,7 @@ const Services = () => {
         </div>
       </div>
       {/* I am Service */}
-      <div className="flex flex-col">
+      <div  id="bas" className="flex flex-col">
         <div className="flex lg:flex-row flex-col text-white space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbDeviceDesktopAnalytics className="lg:mr-16 text-[var(--secondary)]" />
@@ -139,7 +139,7 @@ const Services = () => {
         </div>
       </div>
       {/* I am Service */}
-      <div className="flex flex-col">
+      <div  id="smm"  className="flex flex-col">
         <div className="flex lg:flex-row flex-col-reverse space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
           <div className="second flex flex-col space-y-6">
             <div className="heading__2">Social Media Management</div>
@@ -176,7 +176,7 @@ const Services = () => {
         </div>
       </div>
       {/* I am Service */}
-      <div className="flex flex-col">
+      <div id="seo"  className="flex flex-col">
         <div className="flex text-white lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbWorldSearch className="lg:mr-16 text-[var(--secondary)]" />

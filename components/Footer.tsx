@@ -78,21 +78,10 @@ const Footer = () => {
             <div className="flex flex-col space-y-3">
               <h1 className="font-bold text-[var(--third)]">Useful Links</h1>
               <div className="lg:flex hidden flex-col space-y-3">
-                <Link href={""}>How it Works</Link>
-                <Link href={""}>Featured</Link>
-                <Link href={""}>Partnership</Link>
-                <Link href={""}>Business Relation</Link>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col gap-6 text-base min-w-[170px]">
-            <div className="flex flex-col space-y-3">
-              <h1 className="font-bold text-[var(--third)]">Portfolio</h1>
-              <div className="lg:flex hidden flex-col space-y-3">
-                <Link href={""}>Events</Link>
-                <Link href={""}>Blogs</Link>
-                <Link href={""}>PodCast</Link>
-                <Link href={""}>Invite a Friend</Link>
+                <Link href={"/"}>Home</Link>
+                <Link href={"/services"}>Services</Link>
+                <Link href={"/about"}>About</Link>
+                <Link href={"/contact"}>Contact</Link>
               </div>
             </div>
           </div>
