@@ -34,7 +34,7 @@ export function NavbarDemo() {
             setActive={setActive}
             item="Services"
           >
-            <div className="flex space-x-2 justify-between p-4 w-[96vw] h-[80vh]">
+            <div className="flex space-x-2 justify-between p-4 w-[96vw] h-[60vh]">
               <div className="flex flex-col space-y-2">
                 <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
                 <HoveredLink className="text-sm" href="/services#webdev">
