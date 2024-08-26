@@ -14,13 +14,13 @@ const Footer = () => {
   return (
     <footer className="flex flex-col bg-gray-100  text-black lg:pt-2 pt-5 ">
       <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10 lg:py-4 ">
-        <div className="flex flex-col justify-start  items-start gap-6 ">
+        <div className="flex flex-col justify-start  items-start gap-3 ">
           <img
             src="/logo-trans.png"
             className="lg:w-[10rem] lg:h-[4rem] w-[12rem] h-[5rem]"
             alt=""
           />
-          <p className="lg:text-base text-sm  text-justify text-black lg:w-[25rem] w-[85vw]">
+          <p className=" text-sm  text-justify text-black lg:w-[25rem] w-[85vw]">
             DevToDeploy provides web&#44; mobile&#44; and AI solutions&#44;
             crafting visually captivating designs and executing result-driven
             digital marketing strategies to amplify your brand&apos;s reach.
@@ -29,10 +29,10 @@ const Footer = () => {
             <GoMail />
             <input
               placeholder="Your Email"
-              className="lg:text-base text-xs bg-gray-200 border-none px-3 lg:w-[100%] w-[50%] focus:outline-none lg:px-4 lg:py-2 h-full"
+              className="lg:text-sm text-xs bg-gray-200 border-none px-3 lg:w-[100%] w-[50%] focus:outline-none lg:px-4 lg:py-0 h-full"
               type="text"
             />
-            <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md lg:px-5 lg:py-3 py-2 px-10 h-full">
+            <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md lg:px-3 lg:py-2 py-2 px-10 h-full">
               Subscribe
             </button>
           </div>
@@ -74,8 +74,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-10">
-          <div className="flex flex-col gap-6 text-base min-w-[170px]">
-            <div className="flex flex-col space-y-3">
+          <div className="flex flex-col gap-3 text-sm min-w-[170px]">
+            <div className="flex flex-col space-y-1">
               <h1 className="font-bold text-[var(--third)]">Useful Links</h1>
               <div className="lg:flex hidden flex-col space-y-3">
                 <Link href={"/"}>Home</Link>
@@ -85,8 +85,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-6 text-base min-w-[170px]">
-            <div className="flex flex-col space-y-3">
+          <div className="flex flex-col gap-1 text-sm min-w-[170px]">
+            <div className="flex flex-col space-y-2">
               <h1 className="font-bold text-[var(--third)]">Contact Us</h1>
               <div className="hidden lg:flex lg:flex-col space-y-3">
                 <Link href={"https://www.pinterest.com/devtodeploy/"}>

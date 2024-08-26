@@ -35,7 +35,7 @@ export const MenuItem = ({
     >
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer  hover:text-[var(--third)] text-black hover:opacity-[0.9] dark:text-black"
+        className="cursor-pointer   hover:text-[var(--third)] text-black hover:opacity-[0.9] dark:text-black"
       >
         {item}
       </motion.p>
@@ -45,11 +45,11 @@ export const MenuItem = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
-          <div className="absolute  z-50 top-[calc(100%_+_0.1rem)] left-1/2 transform -translate-x-1/2 pt-4">
+          <div className="absolute  z-50 top-[calc(100%_+_0.1rem)] left-20 transform -translate-x-1/2 pt-4">
             <motion.div
               transition={transition}
               layoutId="active" // layoutId ensures smooth animation
-              className="bg-[#ffffff] z- dark:bg-white backdrop-blur-sm overflow-hidden border dark:border-black/[0.1] shadow-xl"
+              className="bg-[#ffffffd1] w-[100vw] h-[100vh] dark:bg-white  overflow-hidden border dark:border-black/[0.1] shadow-xl"
             >
               <motion.div
                 layout // layout ensures smooth animation

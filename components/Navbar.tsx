@@ -34,8 +34,9 @@ export function NavbarDemo() {
             setActive={setActive}
             item="Services"
           >
-            <div className="flex space-x-2">
-              <div className="flex flex-col">
+            <div className="flex space-x-2 justify-between p-4 w-[96vw] h-[80vh]">
+              <div className="flex flex-col space-y-2">
+                <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
                 <HoveredLink className="text-sm" href="/services#webdev">
                   Website Development
                 </HoveredLink>
@@ -52,20 +53,67 @@ export function NavbarDemo() {
                   Social Media Management
                 </HoveredLink>
               </div>
-              <div className="flex flex-col justify-center border-l px-3 border-black">
-                <HoveredLink className="text-sm" href="/">
-                  AI Service
+              
+              <div className="flex flex-col space-y-2">
+                <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
+                <HoveredLink className="text-sm" href="/services#webdev">
+                  Website Development
                 </HoveredLink>
-                <HoveredLink className="text-sm" href="/">
-                  AI Service
+                <HoveredLink className="text-sm" href="/services#mdev">
+                  Mobile App Development
                 </HoveredLink>
-                <HoveredLink className="text-sm" href="/">
-                  AI Service
+                <HoveredLink className="text-sm" href="/services#bas">
+                  Business Analytics Services
                 </HoveredLink>
-                <HoveredLink className="text-sm" href="/">
-                  AI Service
+                <HoveredLink className="text-sm" href="/services#seo">
+                  Search Engine Optimisation
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#smm">
+                  Social Media Management
                 </HoveredLink>
               </div>
+              
+              <div className="flex flex-col space-y-2">
+                <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
+                <HoveredLink className="text-sm" href="/services#webdev">
+                  Website Development
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#mdev">
+                  Mobile App Development
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#bas">
+                  Business Analytics Services
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#seo">
+                  Search Engine Optimisation
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#smm">
+                  Social Media Management
+                </HoveredLink>
+              </div>
+              
+              <div className="flex flex-col space-y-2">
+                <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
+                <HoveredLink className="text-sm" href="/services#webdev">
+                  Website Development
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#mdev">
+                  Mobile App Development
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#bas">
+                  Business Analytics Services
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#seo">
+                  Search Engine Optimisation
+                </HoveredLink>
+                <HoveredLink className="text-sm" href="/services#smm">
+                  Social Media Management
+                </HoveredLink>
+              </div>
+              
+              
+              
+            
             </div>
           </MenuItem>
 
