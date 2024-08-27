@@ -34,9 +34,13 @@ export function NavbarDemo() {
             setActive={setActive}
             item="Services"
           >
-            <div className="flex space-x-2 justify-between p-4 w-[96vw] h-[60vh]">
+            <div className="flex space-x-2 justify-evenly p-4 w-[96vw] h-[60vh]">
+             
+              
+              
               <div className="flex flex-col space-y-2">
-                <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
+                <h1 className="py-1 font-semibold text-[var(--third)]">Software Development
+                </h1>
                 <HoveredLink className="text-sm" href="/services#webdev">
                   Website Development
                 </HoveredLink>
@@ -55,60 +59,20 @@ export function NavbarDemo() {
               </div>
               
               <div className="flex flex-col space-y-2">
-                <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
+                <h1 className="py-1 font-semibold text-[var(--third)]">Artificial Intelligence</h1>
                 <HoveredLink className="text-sm" href="/services#webdev">
-                  Website Development
+                AI Consulting
                 </HoveredLink>
                 <HoveredLink className="text-sm" href="/services#mdev">
-                  Mobile App Development
+                Generative AI
                 </HoveredLink>
                 <HoveredLink className="text-sm" href="/services#bas">
-                  Business Analytics Services
+                Machine Learning
                 </HoveredLink>
                 <HoveredLink className="text-sm" href="/services#seo">
-                  Search Engine Optimisation
+                AI Frameworks
                 </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#smm">
-                  Social Media Management
-                </HoveredLink>
-              </div>
-              
-              <div className="flex flex-col space-y-2">
-                <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
-                <HoveredLink className="text-sm" href="/services#webdev">
-                  Website Development
-                </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#mdev">
-                  Mobile App Development
-                </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#bas">
-                  Business Analytics Services
-                </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#seo">
-                  Search Engine Optimisation
-                </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#smm">
-                  Social Media Management
-                </HoveredLink>
-              </div>
-              
-              <div className="flex flex-col space-y-2">
-                <h1 className="py-1 font-semibold text-[var(--third)]">Our Services</h1>
-                <HoveredLink className="text-sm" href="/services#webdev">
-                  Website Development
-                </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#mdev">
-                  Mobile App Development
-                </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#bas">
-                  Business Analytics Services
-                </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#seo">
-                  Search Engine Optimisation
-                </HoveredLink>
-                <HoveredLink className="text-sm" href="/services#smm">
-                  Social Media Management
-                </HoveredLink>
+             
               </div>
               
               
