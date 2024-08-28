@@ -114,7 +114,7 @@ const Footer = () => {
                 </span>
                 <div className="text-black font-semibold">Email</div>
                 <span className="text-[var(--third)] font-semibold">
-                  example@gmail.com
+                contact@devtodeploy.org
                 </span>
               </div>
             </div>
