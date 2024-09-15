@@ -2,7 +2,7 @@ import * as React from "react";
 import { Card, CardTitle } from "@/components/ui/card-hover-effect";
 import { TbDeviceDesktopCode,TbDeviceMobileCode,TbDeviceAnalytics,TbUsersGroup } from "react-icons/tb";
 import { FaGears } from "react-icons/fa6";
-
+import { Poppins } from '@next/font/google';
 import {
   Carousel,
   CarouselContent,
@@ -40,9 +40,14 @@ const CardData = [
  
 ];
 
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+});
+
 export function CarouselDemo() {
   return (
-    <Carousel className="w-full lg:max-w-5xl max-w-xs">
+    <Carousel className={`${poppins.className} w-full lg:max-w-5xl max-w-xs1`} >
       <CarouselContent>
         {CardData.map((card, index) => (
           <CarouselItem key={index}>
@@ -51,7 +56,7 @@ export function CarouselDemo() {
                 <CardTitle className="flex flex-col lg:space-y-5 space-y-2 aspect-square items-center justify-center lg:p-4 py-3 ">
                   <span className="text-center lg:text-6xl text-5xl">{card.img}</span>
                   <span className="lg:text-xl text-sm text-center font-semibold">{card.title}</span>
-                  <span className="text-xs text-justify font-normal">
+                  <span className="text-sm text-justify font-normal">
                     {card.desc}
                   </span>
                 </CardTitle>

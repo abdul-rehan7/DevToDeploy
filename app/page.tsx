@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { useEffect } from "react";
 import { ImagesCarousel } from "@/components/HeroCarousel";
+
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 
@@ -53,7 +54,6 @@ export default function Home() {
       <section className=" px-4 py-8 w-screen flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-[2%] justify-center">
         <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
-            data-aos="slide-left"
             className=" spin lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
