@@ -2,9 +2,15 @@
 import { CarouselDemo } from "@/components/Carousel";
 import * as React from "react";
 import Link from "next/link";
+import { useEffect } from "react";
 import { ImagesCarousel } from "@/components/HeroCarousel";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <main className="flex flex-col justify-normal items-center">
       {/* ============== HERO SECTION  */}
@@ -34,7 +40,12 @@ export default function Home() {
           </Link>
         </div>
         <div className="second lg:w-[50vw] w-[90vw] flex flex-col justify-center items-center">
-          <img className="h-[70vh]" src="/hero-item.png" alt="" />
+          <img
+            loading="lazy"
+            className="h-[70vh]"
+            src="/hero-item.png"
+            alt=""
+          />
         </div>
       </section>
       {/* ============== SERVICES SECTION  */}
@@ -42,7 +53,7 @@ export default function Home() {
       <section className=" px-4 py-8 w-screen flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-[2%] justify-center">
         <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
-
+            data-aos="slide-left"
             className=" spin lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
@@ -131,7 +142,11 @@ export default function Home() {
 
       {/* ===================CONSULTATION */}
       <div className=" w-screen flex px-16 py-8 flex-col justify-center items-center lg:flex-row">
-        <div className=" lg:w-[60vw] w-[90vw] hidden lg:block">
+        <div
+          className=" lg:w-[60vw] w-[90vw] hidden lg:block"
+          data-aos-once="true"
+          data-aos="fade-right"
+        >
           <img src="/consultation.jpg" alt="" />
         </div>
         <div className="bg-white border-[1px] border-gray-200 lg:-translate-x-[30%] rounded-md p-6 flex flex-col space-y-3 lg:w-[50vw] w-[90vw]">
@@ -144,16 +159,38 @@ export default function Home() {
           </p>
           <form action="" className="flex flex-col space-y-4 ">
             <div className="flex flex-col lg:flex-row lg:space-y-0 space-y-4 justify-between w-full">
-              <input placeholder="Name" type="text" className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm" />
-              <input placeholder="Email" type="text" className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm" />
+              <input
+                placeholder="Name"
+                type="text"
+                className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm"
+              />
+              <input
+                placeholder="Email"
+                type="text"
+                className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm"
+              />
             </div>
             <div className="flex flex-col space-y-5 justify-between w-full">
-              <input type="text" placeholder="Subject" className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm w-full" />
+              <input
+                type="text"
+                placeholder="Subject"
+                className=" border-[1px] border-gray-200 p-2 rounded-md lg:text-lg text-sm w-full"
+              />
 
-              <textarea placeholder="Message" className="rounded-md p-2" rows={5} name="" id=""></textarea>
+              <textarea
+                placeholder="Message"
+                className="rounded-md p-2 border-[1px] border-gray-200"
+                rows={5}
+                name=""
+                id=""
+              ></textarea>
             </div>
-            <button type="submit" className="w-full font-semibold active:bg-[#161616] bg-black rounded-md text-white p-4">Submit</button>
-           
+            <button
+              type="submit"
+              className="w-full font-semibold active:bg-[#161616] bg-black rounded-md text-white p-4"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </div>
