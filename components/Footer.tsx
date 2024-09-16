@@ -45,13 +45,14 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
+            href="https://x.com/DevToDeploy?t=b-eJuvn8vJsNtZIEgdMQTA&s=09"
               target="_blank"
               className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaTwitter />
             </a>
             <a
-              href="https://pk.linkedin.com/in/devtodeploy-kamyab-pakistan-58ba921ba"
+              href="https://www.linkedin.com/in/devtodeployltd/"
               target="_blank"
               className="icon p-3 hover:bg-[#1f44ff] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
