@@ -5,6 +5,10 @@
 body {
   overflow-x: hidden;
   transition: 1s;
+  cursor: default !important;
+}
+* {
+  cursor: default !important;
 }
 :root {
   --primary: #000;
