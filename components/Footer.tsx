@@ -45,7 +45,7 @@ const Footer = () => {
               <FaFacebookF />
             </a>
             <a
-            href="https://x.com/DevToDeploy?t=b-eJuvn8vJsNtZIEgdMQTA&s=09"
+              href="https://x.com/DevToDeploy?t=b-eJuvn8vJsNtZIEgdMQTA&s=09"
               target="_blank"
               className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
@@ -90,20 +90,20 @@ const Footer = () => {
             <div className="flex flex-col space-y-2">
               <h1 className="font-bold text-[var(--third)]">Contact Us</h1>
               <div className="hidden lg:flex lg:flex-col space-y-3">
-                <Link href={"https://www.pinterest.com/devtodeploy/"}>
+                <Link  target="_blank" href={"https://www.pinterest.com/devtodeploy/"}>
                   Pinterest
                 </Link>
-                <Link href={" https://www.instagram.com/devtodeploy/"}>
+                <Link  target="_blank" href={" https://www.instagram.com/devtodeploy/"}>
                   Instagram
                 </Link>
                 <Link
-                  href={
+                   target="_blank" href={
                     "https://pk.linkedin.com/in/devtodeploy-kamyab-pakistan-58ba921ba"
                   }
                 >
                   LinkedIn
                 </Link>
-                <Link href={" https://www.facebook.com/devtodeploy"}>
+                <Link  target="_blank" href={" https://www.facebook.com/devtodeploy"}>
                   Facebook
                 </Link>
               </div>
@@ -115,7 +115,7 @@ const Footer = () => {
                 </span>
                 <div className="text-black font-semibold">Email</div>
                 <span className="text-[var(--third)] font-semibold">
-                contact@devtodeploy.org
+                  contact@devtodeploy.org
                 </span>
               </div>
             </div>
