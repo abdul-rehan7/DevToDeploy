@@ -35,12 +35,12 @@ const CardData = [
   {
     img: "/services/soc_man.jpeg", // Add your image URLs here
     title: "Social Media Management",
-    desc: "In today&apos;s digital age, social media is a crucial element of your brand&apos;s success. DevToDeploy offers comprehensive social media management services designed to amplify your online presence and engage your...",
+    desc: "In today's digital age, social media is a crucial element of your brand's success. DevToDeploy offers comprehensive social media management services designed to amplify your online presence and engage your...",
   },
   {
     img: "/services/seo.jpg", // Add your image URLs here
     title: "SEO (Search Engine Optimization)",
-    desc: "Achieve outstanding search engine visibility and attract quality traffic with &apos;s expert SEO services. In a competitive digital marketplace, being easily discoverable on search engines...",
+    desc: "Achieve outstanding search engine visibility and attract quality traffic with expert SEO services. In a competitive digital marketplace, being easily discoverable on search engines...",
   },
 ];
 
@@ -57,14 +57,14 @@ export function CarouselDemo() {
           <CarouselItem key={index}>
             <div>
               <Card>
-                <CardTitle className="relative flex w-full flex-col lg:space-y-4 space-y-2 aspect-square items-baseline justify-evenly lg:p-0  ">
+                <CardTitle className="relative flex w-full flex-col lg:space-y-4 space-y-3 items-baseline justify-between lg:p-0  ">
                   <span className="text-center  bg-green-500 w-full lg:text-6xl text-5xl">
-                    <img className="h-[15rem]" src={card.img} alt="" />
+                    <img className="-mt-7 lg:mt-0 lg:h-[15rem] h-[10rem]" src={card.img} alt="" />
                   </span>
                   <span className="lg:text-base px-4  text-sm text-center font-semibold">
                     {card.title}
                   </span>
-                  <span className="text-sm px-4 text-justify font-normal">
+                  <span className="lg:text-sm  text-xs px-4 text-justify font-normal">
                     {card.desc}
                   </span>
                 </CardTitle>
