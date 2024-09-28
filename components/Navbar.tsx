@@ -12,7 +12,7 @@ export function NavbarDemo() {
 
   return (
     <>
-      <div className="bg-transparent lg:px-20 px-7 py-4 flex justify-between items-center w-full">
+      <div className="bg-transparent lg:px-20 px-7 py-2 flex justify-between items-center w-full">
         <div className="logo">
           <img src="/logo-trans.png" className="w-[10rem] h-[4rem]" alt="" />
         </div>
@@ -39,7 +39,7 @@ export function NavbarDemo() {
               
               
               <div className="flex flex-col space-y-2">
-                <h1 className="py-1 font-semibold text-[var(--third)]">Software Development
+                <h1 className="py-1 text-xl font-semibold text-[var(--third)]">Software Development
                 </h1>
                 <HoveredLink className="text-sm" href="/services#webdev">
                   Website Development
@@ -59,7 +59,7 @@ export function NavbarDemo() {
               </div>
               
               <div className="flex flex-col space-y-2">
-                <h1 className="py-1 font-semibold text-[var(--third)]">Artificial Intelligence</h1>
+                <h1 className="py-1 text-xl font-semibold text-[var(--third)]">Artificial Intelligence</h1>
                 <HoveredLink className="text-sm" href="/services#webdev">
                 AI Consulting
                 </HoveredLink>

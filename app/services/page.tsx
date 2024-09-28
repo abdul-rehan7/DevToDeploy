@@ -32,7 +32,7 @@ const Services = () => {
 
       {/* I am Service */}
       <div id="webdev" className="flex flex-col">
-        <div className="flex lg:flex-row flex-col  space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] text-white w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col  space-y-4 justify-center items-center px-5  md:px-[7rem]  text-left bg-[var(--third)] text-white w-screen md:h-auto pb-7 pt-5">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbDeviceDesktopCode className="lg:mr-16 text-white" />
           </div>
@@ -68,9 +68,9 @@ const Services = () => {
       </div>
       {/* I am Service */}
       <div id="mdev"  className="flex flex-col">
-        <div className="flex lg:flex-row flex-col-reverse space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col-reverse space-y-4 justify-center items-center px-5  md:px-[7rem] text-left bg-white text-black w-screen md:h-auto  pb-7 pt-5">
           <div className="second flex flex-col space-y-6">
-            <div className="heading__2 ">Mobile Application Development</div>
+            <div className="heading__2">Mobile Application Development</div>
             <div className="para__2 ">
               In a world dominated by mobile devices, a powerful app can set
               your business apart and engage users like never before. At
@@ -105,7 +105,7 @@ const Services = () => {
       </div>
       {/* I am Service */}
       <div  id="bas" className="flex flex-col">
-        <div className="flex lg:flex-row flex-col text-white space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col text-white space-y-4 justify-center items-center px-5  md:px-[7rem]  text-left bg-[var(--third)] w-screen md:h-auto pb-7 pt-5">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbDeviceDesktopAnalytics className="lg:mr-16 text-[var(--secondary)]" />
           </div>
@@ -140,15 +140,15 @@ const Services = () => {
       </div>
       {/* I am Service */}
       <div  id="smm"  className="flex flex-col">
-        <div className="flex lg:flex-row flex-col-reverse space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-white text-black w-screen md:h-[70vh] ">
+        <div className="flex lg:flex-row flex-col-reverse space-y-4 justify-center items-center px-5  md:px-[7rem] text-left bg-white text-black w-screen md:h-auto  pb-7 pt-7">
           <div className="second flex flex-col space-y-6">
             <div className="heading__2">Social Media Management</div>
             <div className="para__2">
-              In today’s digital age, social media is a crucial element of your
-              brand’s success. DevToDeploy offers comprehensive social media
+              In today&apos;s digital age, social media is a crucial element of your
+              brand&apos;s success. DevToDeploy offers comprehensive social media
               management services designed to amplify your online presence and
               engage your audience effectively. Our team develops and implements
-              strategic social media plans that enhance your brand’s visibility,
+              strategic social media plans that enhance your brand&apos;s visibility,
               foster meaningful connections with your target audience, and drive
               engagement. We handle everything from content creation and
               curation to community management and targeted advertising,
@@ -177,7 +177,7 @@ const Services = () => {
       </div>
       {/* I am Service */}
       <div id="seo"  className="flex flex-col">
-        <div className="flex text-white lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem] py-10 text-left bg-[var(--third)] w-screen md:h-[70vh] ">
+        <div className="flex text-white lg:flex-row flex-col space-y-4 justify-center items-center px-5  md:px-[7rem]  text-left bg-[var(--third)] w-screen md:h-auto  pb-7 pt-5">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbWorldSearch className="lg:mr-16 text-[var(--secondary)]" />
           </div>

@@ -25,14 +25,14 @@ const Footer = () => {
             crafting visually captivating designs and executing result-driven
             digital marketing strategies to amplify your brand&apos;s reach.
           </p>
-          <div className="bg-gray-200 border-[1px] border-[var(--third)] lg:pl-4 pl-2 rounded-md flex items-center">
-            <GoMail />
+          <div className="bg-gray-200 border-[1px] group border-[var(--third)] lg:pl-4 pl-2 rounded-md flex items-center">
+            <GoMail className="lg:text-xl " />
             <input
               placeholder="Your Email"
-              className="lg:text-sm text-xs bg-gray-200 border-none px-3 lg:w-[100%] w-[50%] focus:outline-none lg:px-4 lg:py-0 h-full"
+              className="lg:text-sm text-xs bg-gray-200 hover:group-first:bg-red-600 border-none px-3 lg:w-[100%] w-[50%] focus:outline-none lg:px-4 lg:py-0 h-full"
               type="text"
             />
-            <button className="bg-[var(--third)] text-white rounded-tr-md rounded-br-md lg:px-3 lg:py-2 py-2 px-10 h-full">
+            <button className=" bg-[var(--third)] group text-white rounded-tr-md rounded-br-md lg:px-3 lg:py-2 py-2 px-10 h-full">
               Subscribe
             </button>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
             <a
               href=" https://www.facebook.com/devtodeploy"
               target="_blank"
-              className="icon p-3 hover:bg-[#1f44ff] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+              className="icon p-3 hover:bg-[var(--third)]  transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaFacebookF />
             </a>
@@ -54,21 +54,21 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/devtodeployltd/"
               target="_blank"
-              className="icon p-3 hover:bg-[#1f44ff] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+              className="icon p-3 hover:bg-[var(--third)] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaLinkedinIn />
             </a>
             <a
               href=" https://www.instagram.com/devtodeploy/"
               target="_blank"
-              className="icon p-3 hover:bg-[#4c68d7] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+              className="icon p-3 hover:bg-[var(--third)]  transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaInstagram />
             </a>
             <a
               href="https://www.pinterest.com/devtodeploy/"
               target="_blank"
-              className="icon p-3 hover:bg-[#ed2828] transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
+              className="icon p-3 hover:bg-[var(--third)]  transition-all hover:text-white rounded-md cursor-pointer border-[1px] border-gray-300 bg-green"
             >
               <FaPinterest />
             </a>

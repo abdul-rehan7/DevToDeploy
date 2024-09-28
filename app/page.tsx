@@ -22,7 +22,7 @@ export default function Home() {
         <div className="first h-full flex flex-col justify-center py-6    space-y-5 lg:w-[50vw]  w-[95vw]  lg:p-14 p-7">
           <h1 className="text-4xl font-semibold">
             Advanced IT Solutions: <br />
-            <span className="text-blue-500">Empowering Businesses</span> With
+            <span className="text-blue-500">Empowering Businesses</span>  <br />With
             Transforming Tech.
           </h1>
           <p>
@@ -52,44 +52,44 @@ export default function Home() {
       {/* ============== SERVICES SECTION  */}
 
       <section className=" px-4 py-8 w-screen flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-[2%] justify-center">
-        <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
+        <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
             className=" spin lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
           />
-          <h1 className="lg:text-xl text-2xl font-semibold">
+          <h1 className=" lg:text-xl text-2xl font-semibold">
             Customer Satisfaction
           </h1>
         </div>
-        <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
+        <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
             className="spin  lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
           />
-          <h1 className="lg:text-xl text-2xl font-semibold">
+          <h1 className="] lg:text-xl text-2xl font-semibold">
             Innovation and Creativity
           </h1>
         </div>
-        <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
+        <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
             className="spin lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
           />
-          <h1 className="lg:text-xl text-2xl font-semibold">
-            Customer Satisfaction
+          <h1 className=" lg:text-xl text-2xl font-semibold">
+          24/7 Proactive Support
           </h1>
         </div>
-        <div className="flex space-x-5 items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
+        <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
             className="spin lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
             alt=""
           />
-          <h1 className="lg:text-xl text-2xl font-semibold">
-            24/7 Proactive Support
+          <h1 className=" lg:text-xl text-2xl font-semibold">
+            Continuous Improvement
           </h1>
         </div>
       </section>
@@ -136,7 +136,7 @@ export default function Home() {
       </section>
       {/* Fourth Section */}
       <section className="flex flex-col space-y-7 items-center w-screen p-12">
-        <h1 className="text-4xl font-semibold text-center ">Our Services</h1>
+        <h1 id="services-heading" className="text-4xl py-7 font-semibold text-center ">Our Services</h1>
         <CarouselDemo />
       </section>
 
