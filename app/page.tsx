@@ -143,7 +143,7 @@ export default function Home() {
       {/* ===================CONSULTATION */}
       <div className=" w-screen flex px-16 py-8 flex-col justify-center items-center lg:flex-row">
         <div
-          className=" lg:w-[60vw] w-[90vw] hidden lg:block"
+          className="lg:w-[60vw] w-[90vw] hidden lg:block"
           data-aos-once="true"
           data-aos="fade-right"
         >
