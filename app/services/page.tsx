@@ -23,7 +23,7 @@ const Services = () => {
   });
 
   return (
-    <div className="bg-white flex flex-col items-center">
+    <div className="bg-white flex flex-col items-center poppins-regular ">
          <section
         className={` p-0 h-auto w-screen`}
       >
@@ -31,7 +31,7 @@ const Services = () => {
       </section>
 
       {/* I am Service */}
-      <div id="webdev" className="flex flex-col">
+      <div id="webdev" className="flex flex-col ">
         <div className="flex lg:flex-row flex-col  space-y-4 justify-center items-center px-5  md:px-[7rem]  text-left bg-[var(--third)] text-white w-screen md:h-auto pb-7 pt-5">
           <div className="first text-[11rem]" data-aos="fade-right">
             <TbDeviceDesktopCode className="lg:mr-16 text-white" />

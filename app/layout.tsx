@@ -6,7 +6,7 @@ import { NavbarDemo } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "DevToDeploy | Where Code Meets Creativity",
+  title: "DevToDeploy | We Believe in Code ",
   description:
     "Leading web development company specializing in creating dynamic, responsive websites. Experts in delivering scalable web solutions tailored to your needs",
 };
