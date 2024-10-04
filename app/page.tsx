@@ -7,7 +7,20 @@ import { ImagesCarousel } from "@/components/HeroCarousel";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-
+const card_data = [
+  {
+    title: "Customer Satisfaction",
+  },
+  {
+    title: "Innovation and Creativity",
+  },
+  {
+    title: "24/7 Proactive Support",
+  },
+  {
+    title: "Continuous Improvement",
+  },
+];
 export default function Home() {
   useEffect(() => {
     AOS.init();
@@ -22,8 +35,8 @@ export default function Home() {
         <div className="first h-full flex flex-col justify-center py-6    space-y-5 lg:w-[50vw]  w-[95vw]  lg:p-14 p-7">
           <h1 className="text-4xl font-semibold">
             Advanced IT Solutions: <br />
-            <span className="text-blue-500">Empowering Businesses</span>  <br />With
-            Transforming Tech.
+            <span className="text-blue-500">Empowering Businesses</span> <br />
+            With Transforming Tech.
           </h1>
           <p>
             DevToDeploy elevates your business with customized, fully managed
@@ -51,18 +64,22 @@ export default function Home() {
       </section>
       {/* ============== SERVICES SECTION  */}
 
-      <section className=" px-4 py-8 w-screen flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-[2%] justify-center">
-        <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
-          <img
-            className=" spin lg:w-10 lg:h-10 w-[4rem] "
-            src="/our-personnel.png"
-            alt=""
-          />
-          <h1 className=" lg:text-xl text-2xl font-semibold">
-            Customer Satisfaction
-          </h1>
-        </div>
-        <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
+      <section className=" grid gap-4 grid-cols-1 justify-center items-center  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-4 py-8 w-screen ">
+        {card_data.map((item) => (
+          <div
+            key={item.title}
+            className="flex space-x-5  w-auto items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]"
+          >
+            <img
+              className=" spin lg:w-10 lg:h-10 w-[4rem] "
+              src="/our-personnel.png"
+              alt=""
+            />
+            <h1 className=" lg:text-lg text-lg font-semibold">{item.title}</h1>
+          </div>
+        ))}
+
+        {/* <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
           <img
             className="spin  lg:w-10 lg:h-10 w-[4rem] "
             src="/our-personnel.png"
@@ -91,7 +108,7 @@ export default function Home() {
           <h1 className=" lg:text-xl text-2xl font-semibold">
             Continuous Improvement
           </h1>
-        </div>
+        </div> */}
       </section>
 
       {/* third section */}
@@ -136,7 +153,12 @@ export default function Home() {
       </section>
       {/* Fourth Section */}
       <section className="flex flex-col space-y-7 items-center w-screen p-12">
-        <h1 id="services-heading" className="text-4xl py-7 font-semibold text-center ">Our Services</h1>
+        <h1
+          id="services-heading"
+          className="text-4xl py-7 font-semibold text-center "
+        >
+          Our Services
+        </h1>
         <CarouselDemo />
       </section>
 

@@ -78,7 +78,7 @@ const Footer = () => {
           <div className="flex flex-col gap-3 text-sm min-w-[170px]">
             <div className="flex flex-col space-y-1">
               <h1 className="font-bold text-[var(--third)]">Useful Links</h1>
-              <div className="lg:flex hidden flex-col space-y-3">
+              <div className="flex flex-col space-y-3">
                 <Link href={"/"}>Home</Link>
                 <Link href={"/services"}>Services</Link>
                 <Link href={"/about"}>About</Link>

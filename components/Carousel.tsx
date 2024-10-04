@@ -59,7 +59,7 @@ export function CarouselDemo() {
               <Card>
                 <CardTitle className="relative flex w-full flex-col lg:space-y-4 space-y-3 items-baseline justify-between lg:p-0  ">
                   <span className="text-center  bg-green-500 w-full lg:text-6xl text-5xl">
-                    <img className="-mt-7 lg:mt-0 lg:h-[15rem] h-[10rem]" src={card.img} alt="" />
+                    <img className="-mt-7 w-full lg:mt-0 lg:h-[15rem] h-[10rem]" src={card.img} alt="" />
                   </span>
                   <span className="lg:text-base px-4  text-sm text-center font-semibold">
                     {card.title}
