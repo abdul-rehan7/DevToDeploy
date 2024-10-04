@@ -82,7 +82,7 @@ const About = () => {
       <div className="w-full lg:space-x-7 justify-center items-center py-5  lg:space-y-0 space-y-7 flex flex-col lg:flex-row lg:justify-between lg:p-16 md:h-[25rem] bg-gray-100">
         <div className="first flex flex-col space-y-4 lg:w-[45vw] w-[80vw]">
           <div className="text-xl lg:text-2xl font-bold text-[var(--third)]">
-            Who We Are?
+          Who We Are?
           </div>
           <div className="about__para">
             With a strong foundation in digital technology stretching over 13
