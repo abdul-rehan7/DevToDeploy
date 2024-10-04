@@ -71,7 +71,7 @@ const About = () => {
         className={`flex bg-center bg-[#000000b5] bg-cover bg-no-repeat flex-col lg:flex-row justify-center items-center pt-24 p-10  lg:h-[80vh] h-auto w-screen`}
       >
         <div className="first h-full flex flex-col justify-center py-16    space-y-5 lg:w-[70vw]  w-[96vw]  lg:p-14 p-4">
-          <h1 className="lg:text-4xl text-2xl text-center text-white font-semibold">
+          <h1 className="md:text-4xl  text-2xl text-center text-white font-semibold">
             Grow Your Business with
             <span className="text-blue-500"> Strategic IT Solutions</span> With
             DevToDeploy
