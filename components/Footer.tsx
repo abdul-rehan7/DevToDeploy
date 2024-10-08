@@ -75,6 +75,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex-1 w-full flex md:justify-end flex-wrap max-md:mt-10 gap-10">
+          <div className="flex ">
           <div className="flex flex-col gap-3 text-sm min-w-[170px]">
             <div className="flex flex-col space-y-1">
               <h1 className="font-bold text-[var(--third)]">Useful Links</h1>
@@ -120,6 +121,7 @@ const Footer = () => {
                 </span>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
