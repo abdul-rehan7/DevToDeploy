@@ -1,5 +1,6 @@
 "use client";
 import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
+import { IoMdSearch } from "react-icons/io";
 import { DivideSquareIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -9,6 +10,8 @@ export function NavbarDemo() {
   const [active, setActive] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [visible, setVisible] = useState(true);
+  const [isSearchVisible, setSearchVisible] = useState(false);
+
 
   return (
     <>
@@ -83,6 +86,17 @@ export function NavbarDemo() {
 
           <HoveredLink href="/about">About</HoveredLink>
           <HoveredLink href="/contact">Contact</HoveredLink>
+        </div>
+        <div className="search flex   px-2 space-x-2 items-center group">
+        {isSearchVisible && (
+          <input
+          type="text"
+          placeholder="Search..."
+          className="px-2 py-1 border-[1px] border-gray-100 "
+          />
+        )}
+        <IoMdSearch onClick={() => setSearchVisible(!isSearchVisible)} />
+
         </div>
         <div className="button hidden lg:block">
           <Link

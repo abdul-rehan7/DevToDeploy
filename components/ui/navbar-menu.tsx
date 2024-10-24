@@ -35,7 +35,7 @@ export const MenuItem = ({
     >
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer   hover:text-[var(--third)] text-black hover:opacity-[0.9] dark:text-black"
+        className="cursor-pointer  font-semibold hover:text-[var(--third)] text-black hover:opacity-[0.9] dark:text-black"
       >
         {item}
       </motion.p>
@@ -86,7 +86,7 @@ export const HoveredLink = ({ className,  children, ...rest }: any) => {
   return (
     <Link
       {...rest}
-     className={cn("dark:text-black  hover:text-[var(--third)] ",className)}
+     className={cn("dark:text-black font-semibold  hover:text-[var(--third)] ",className)}
     >
       {children}
     </Link>
