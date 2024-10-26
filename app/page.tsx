@@ -10,15 +10,19 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 const card_data = [
   {
     title: "Customer Satisfaction",
+    img:"/satisfaction.png",
   },
   {
     title: "Innovation and Creativity",
+    img:"/innovation-creativity.png",
   },
   {
     title: "24/7 Proactive Support",
+    img:"/support.png",
   },
   {
     title: "Continuous Improvement",
+    img:"/our-personnel.png",
   },
 ];
 export default function Home() {
@@ -72,7 +76,7 @@ export default function Home() {
           >
             <img
               className=" spin lg:w-10 lg:h-10 w-[4rem] "
-              src="/our-personnel.png"
+              src={item.img}
               alt=""
             />
             <h1 className=" lg:text-lg text-lg font-semibold">{item.title}</h1>

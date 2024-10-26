@@ -85,10 +85,10 @@ export function NavbarDemo() {
           <HoveredLink href="/about">About</HoveredLink>
           <HoveredLink href="/contact">Contact</HoveredLink>
         </div>
-        <div className="flex ml-24 px-2 items-center space-x-2">
+        <div className=" ml-24 px-2 hidden md:flex items-center space-x-2">
       {/* Search bar with sliding animation */}
       <div
-        className={`overflow-hidden transition-all duration-300 ${
+        className={`overflow-hidden  transition-all duration-300 ${
           isSearchVisible ? "w-40 opacity-100" : "w-0 opacity-0"
         }`}
       >
