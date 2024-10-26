@@ -52,7 +52,7 @@ const poppins = Poppins({
 
 export function CarouselDemo() {
   return (
-    <Carousel className={`${poppins.className} w-full lg:max-w-6xl max-w-xs1`}>
+    <Carousel className={`${poppins.className}  lg:max-w-6xl max-w-[20rem]`}>
       <CarouselContent >
         {CardData.map((card, index) => (
           <CarouselItem  key={index}>
