@@ -90,24 +90,6 @@ const Footer = () => {
           <div className="flex flex-col gap-1 text-sm min-w-[170px]">
             <div className="flex flex-col space-y-2">
               <h1 className="font-bold text-[var(--third)]">Contact Us</h1>
-              <div className="hidden lg:flex lg:flex-col space-y-3">
-                <Link  target="_blank" href={"https://www.pinterest.com/devtodeploy/"}>
-                  Pinterest
-                </Link>
-                <Link  target="_blank" href={" https://www.instagram.com/devtodeploy/"}>
-                  Instagram
-                </Link>
-                <Link
-                   target="_blank" href={
-                    "https://pk.linkedin.com/in/devtodeploy-kamyab-pakistan-58ba921ba"
-                  }
-                >
-                  LinkedIn
-                </Link>
-                <Link  target="_blank" href={" https://www.facebook.com/devtodeploy"}>
-                  Facebook
-                </Link>
-              </div>
               <div className="flex flex-col ">
                 <div className="text-black font-semibold">PHONE</div>
                 <span className="text-[var(--third)] font-semibold">

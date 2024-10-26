@@ -15,6 +15,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ThreeDCard } from "./Card";
 
 const CardData = [
   {
@@ -51,25 +52,11 @@ const poppins = Poppins({
 
 export function CarouselDemo() {
   return (
-    <Carousel className={`${poppins.className} w-full lg:max-w-5xl max-w-xs1`}>
-      <CarouselContent>
+    <Carousel className={`${poppins.className} w-full lg:max-w-6xl max-w-xs1`}>
+      <CarouselContent >
         {CardData.map((card, index) => (
-          <CarouselItem key={index}>
-            <div>
-              <Card className="hover:scale-[105%]">
-                <CardTitle className="relative group flex  w-full flex-col lg:space-y-4 space-y-3 items-baseline justify-between lg:p-0  ">
-                  <span className="text-center flex justify-center  bg-green-500 w-full lg:text-6xl text-5xl">
-                    <img className="-mt-7 p-5 rounded-full group-hover:scale-[110%] w-[15vw] lg:mt-0 lg:h-[15vw] h-[30vw]" src={card.img} alt="" />
-                  </span>
-                  <span className="lg:text-base px-4  text-sm text-center font-semibold">
-                    {card.title}
-                  </span>
-                  <span className="lg:text-sm  text-xs px-4 text-justify font-normal">
-                    {card.desc}
-                  </span>
-                </CardTitle>
-              </Card>
-            </div>
+          <CarouselItem  key={index}>
+            <ThreeDCard  name={card.title} description={card.desc} img={card.img} />
           </CarouselItem>
         ))}
       </CarouselContent>

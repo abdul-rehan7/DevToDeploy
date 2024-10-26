@@ -177,7 +177,7 @@ export default function Home() {
         </div>
         <div className="bg-white border-[1px] border-gray-200 lg:-translate-x-[30%] rounded-md p-6 flex flex-col space-y-3 lg:w-[50vw] w-[90vw]">
           <h1 className="lg:text-4xl text-2xl font-semibold lg:w-[60%] w-[80%]">
-            Schedule a Free Consultation
+            Schedule a Free <span className="text-[var(--third)]">Consultation</span>
           </h1>
           <p className="lg:text-base  text-sm">
             We&apos;re happy to answer any questions you may have and help you
@@ -213,7 +213,7 @@ export default function Home() {
             </div>
             <button
               type="submit"
-              className="w-full font-semibold active:bg-[#161616] bg-black rounded-md text-white p-4"
+              className="w-full font-semibold active:bg-[var(--third)] bg-[var(--third)] rounded-md text-white p-4"
             >
               Submit
             </button>
