@@ -5,9 +5,16 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 
-export function ThreeDCard({ name, img, description }) {
+// Define the interface for props
+interface ThreeDCardProps {
+  name: string;         // Name prop as a string
+  img: string;          // Image URL as a string
+  description: string;  // Description prop as a string
+}
+
+export function ThreeDCard({ name, img, description }: ThreeDCardProps) {
   return (
-    <CardContainer className="inter-var m-4 "> {/* Added margin for spacing */}
+    <CardContainer className="inter-var m-4"> {/* Added margin for spacing */}
       <CardBody className="bg-gray-50 group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full sm:w-[22rem] h-auto rounded-xl p-6 border">
         <CardItem
           translateZ="50"
@@ -31,7 +38,6 @@ export function ThreeDCard({ name, img, description }) {
         >
           {description}
         </CardItem>
-      
       </CardBody>
     </CardContainer>
   );
