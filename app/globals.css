@@ -52,17 +52,4 @@ body {
   transition-duration: 1s;
   transform: rotateY(180deg);
 }
-#services-heading {
-  position: relative;
-}
-#services-heading:before {
-  content: "";
-  position: absolute;
-  bottom: 1.7rem;
-  margin: auto;
-  left: 0.2rem;
-  height: 0.8rem;
-  width: 12.5rem;
-  z-index: -1;
-  background: var(--third);
-}
+

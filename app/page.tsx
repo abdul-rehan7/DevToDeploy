@@ -72,7 +72,7 @@ export default function Home() {
         {card_data.map((item) => (
           <div
             key={item.title}
-            className="flex space-x-5  w-auto items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]"
+            className="flex space-x-5 mx-2 md:m-0  w-auto items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]"
           >
             <img
               className=" spin lg:w-10 lg:h-10 w-[4rem] "
@@ -83,36 +83,7 @@ export default function Home() {
           </div>
         ))}
 
-        {/* <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
-          <img
-            className="spin  lg:w-10 lg:h-10 w-[4rem] "
-            src="/our-personnel.png"
-            alt=""
-          />
-          <h1 className="] lg:text-xl text-2xl font-semibold">
-            Innovation and Creativity
-          </h1>
-        </div>
-        <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
-          <img
-            className="spin lg:w-10 lg:h-10 w-[4rem] "
-            src="/our-personnel.png"
-            alt=""
-          />
-          <h1 className=" lg:text-xl text-2xl font-semibold">
-          24/7 Proactive Support
-          </h1>
-        </div>
-        <div className="flex space-x-5 md:w-[60%] items-center py-5 px-3 rounded-md shadow-md bg-white shadow-[#bbbbbb]">
-          <img
-            className="spin lg:w-10 lg:h-10 w-[4rem] "
-            src="/our-personnel.png"
-            alt=""
-          />
-          <h1 className=" lg:text-xl text-2xl font-semibold">
-            Continuous Improvement
-          </h1>
-        </div> */}
+  
       </section>
 
       {/* third section */}
@@ -156,10 +127,10 @@ export default function Home() {
         </div>
       </section>
       {/* Fourth Section */}
-      <section className="flex flex-col space-y-7 items-center w-screen p-12">
+      <section className="flex  flex-col space-y-2 items-center w-screen p-12">
         <h1
           id="services-heading"
-          className="text-4xl py-7 font-semibold text-center "
+          className="text-4xl font-semibold text-center "
         >
           Our Services
         </h1>

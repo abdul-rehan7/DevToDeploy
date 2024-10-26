@@ -14,11 +14,11 @@ interface ThreeDCardProps {
 
 export function ThreeDCard({ name, img, description }: ThreeDCardProps) {
   return (
-    <CardContainer className="inter-var m-4"> {/* Added margin for spacing */}
-      <CardBody className="bg-gray-50 group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full sm:w-[22rem] h-auto rounded-xl p-6 border">
+    <CardContainer className="inter-var m-4 text-white"> {/* Added margin for spacing */}
+      <CardBody className="bg-[var(--third)] group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full sm:w-[22rem] h-auto rounded-xl p-6 border">
         <CardItem
           translateZ="50"
-          className="text-base font-bold text-neutral-600 dark:text-white"
+          className="text-base font-bold  dark:text-white"
         >
           {name}
         </CardItem>
@@ -34,7 +34,7 @@ export function ThreeDCard({ name, img, description }: ThreeDCardProps) {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 dm:text-sm text-xs max-w-sm mt-4 dark:text-neutral-300"
+          className=" dm:text-sm text-xs max-w-sm mt-4 dark:text-neutral-300"
         >
           {description}
         </CardItem>
